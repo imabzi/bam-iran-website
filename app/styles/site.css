@@ -395,6 +395,9 @@
   max-width: var(--max);
   margin-inline: auto;
   padding-inline: var(--gutter);
+  /* Keep footer links clear of the fixed contact toolbar, which sits
+     bottom-right in every language: its 44px buttons, edge offset and a gap. */
+  padding-right: max(var(--gutter), calc(72px + env(safe-area-inset-right)));
 }
 .footer-inner {
   display: grid;

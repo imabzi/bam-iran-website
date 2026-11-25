@@ -37,15 +37,15 @@ export function ArchitectsPreview() {
   );
 }
 
-// Shown only when at least one event is visible. A production build has no
-// events until real ones are published, so the section is simply absent.
+// Always shown. In development the clearly labelled sample events (data/demo)
+// fill it; a production build contains only real published events, and while
+// there are none the heading and tabs stay with a localized empty state.
 export function EventsPreview() {
   const { t } = useLanguage();
   const now = useNow();
   const panelId = useId();
   const [tab, setTab] = useState<EventTab>("all");
   const available = visibleEvents(now);
-  if (available.length === 0) return null;
 
   // Every visible event in the tab. Before the time is known (first render),
   // only the unfiltered list is shown.

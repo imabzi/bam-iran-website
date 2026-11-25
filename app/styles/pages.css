@@ -99,9 +99,7 @@
   right: max(12px, env(safe-area-inset-right));
   bottom: max(24px, env(safe-area-inset-bottom));
   z-index: 40;
-  transition: opacity var(--duration) ease, transform var(--duration) var(--ease), visibility 0s linear 0s;
 }
-.floating-contact.is-hidden { opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity var(--duration) ease, transform var(--duration) var(--ease), visibility 0s linear var(--duration); }
 .contact-links-floating { flex-direction: column; gap: 8px; }
 .contact-links-floating .contact-link {
   width: 44px;
@@ -111,6 +109,18 @@
   color: var(--text);
 }
 .contact-links-floating .contact-link:hover { border-color: var(--accent); color: var(--accent-text); background: var(--bg); }
+/* A channel without a verified destination: same outline, dimmed, no hover. */
+.contact-link.is-unavailable,
+.contact-link.is-unavailable:hover { cursor: not-allowed; opacity: .42; border-color: var(--line-strong); color: var(--text-2); }
+.contact-links-floating .contact-link.is-unavailable,
+.contact-links-floating .contact-link.is-unavailable:hover {
+  /* Solid like its neighbours (content must not show through); only the
+     outline and the glyph are dimmed. */
+  opacity: 1;
+  border-color: color-mix(in srgb, var(--text) 20%, transparent);
+  color: color-mix(in srgb, var(--text) 36%, transparent);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+}
 @media (max-width: 767.98px) {
   .floating-contact { right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); }
   .contact-links-floating { gap: 6px; }

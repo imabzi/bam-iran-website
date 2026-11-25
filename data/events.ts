@@ -3,7 +3,7 @@ import type { TextValue } from "@/lib/i18n";
 // BAM events.
 //
 // No real event has been supplied yet, so `publishedEvents` is empty and the
-// homepage hides its Events section in production. Add approved events here (or,
+// homepage Events section shows its localized empty state in production. Add approved events here (or,
 // later, through the CMS). Never add a fictional event to this list: sample
 // records live in data/demo/events.ts and are excluded from production builds.
 
