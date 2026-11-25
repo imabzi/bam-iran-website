@@ -1,0 +1,193 @@
+import type { ContentLanguage, TextValue } from "@/lib/i18n";
+import { projectContent } from "./projectContent";
+import { approvedLocations } from "./projectLocations";
+import { importedProjectImages } from "./projectImages.generated";
+
+// A value that exists in both content languages. `ar` is added only once an
+// approved Arabic translation exists; until then Arabic shows the verified
+// original (see resolveText in lib/i18n.ts).
+export type LocalizedText = Record<ContentLanguage, string> & { ar?: string };
+// A value that may exist in only one language so far. English and Persian never
+// fall back to each other: text missing in one of them is hidden there.
+export type PartialLocalizedText = TextValue;
+
+export type CategoryId = "residential" | "commercial-leisure" | "large-scale" | "healthcare" | "international";
+
+export type ProjectCategory = LocalizedText & { id: CategoryId };
+
+export type ProjectImages = {
+  cover?: string;
+  card?: string; // A smaller copy of the cover for the Visual View.
+  exterior: string[]; // Feeds the hero slider. Exterior photography only.
+  interior: string[]; // Feeds the two-column gallery.
+  other?: string[]; // Imported but unclassified. Not displayed.
+  amenities?: string[];
+  details?: string[];
+  plans?: string[];
+  archive?: string[];
+};
+
+export type ProjectLocation = {
+  country?: PartialLocalizedText;
+  city?: PartialLocalizedText;
+  district?: PartialLocalizedText;
+  addressFa?: string; // The approved full address. Persian only: never machine-translated.
+  googleMapsUrl?: string; // The approved link, used exactly as supplied.
+};
+
+// Only add verified values. Anything left out is hidden on the project page.
+export type ProjectFacts = {
+  completionYear?: PartialLocalizedText; // e.g. { en: "2023", fa: "۱۴۰۱" }
+  siteArea?: number; // m²
+  builtUpArea?: number; // m²
+  grossFloorArea?: number; // m²
+  floors?: number;
+  units?: number;
+  buildings?: number;
+  parking?: number;
+  structure?: PartialLocalizedText;
+  facade?: PartialLocalizedText;
+  architect?: PartialLocalizedText;
+  developer?: PartialLocalizedText;
+  contractor?: PartialLocalizedText;
+  status?: PartialLocalizedText;
+};
+
+export type Project = {
+  code: string;
+  slug: string;
+  title: LocalizedText;
+  category: ProjectCategory;
+  description?: PartialLocalizedText;
+  images: ProjectImages;
+  location?: ProjectLocation;
+  facts: ProjectFacts;
+};
+
+export type ProjectContent = Partial<Pick<Project, "description" | "images" | "location" | "facts">>;
+
+// The approved category order and labels. The internal ids are unchanged.
+export const projectCategories: Record<CategoryId, ProjectCategory> = {
+  residential: { id: "residential", en: "Residential", fa: "مسکونی", ar: "سكني" },
+  "commercial-leisure": { id: "commercial-leisure", en: "Commercial", fa: "تجاری", ar: "تجاري" },
+  healthcare: { id: "healthcare", en: "Medical", fa: "پزشکی", ar: "طبي" },
+  international: { id: "international", en: "International", fa: "بین‌المللی", ar: "دولي" },
+  "large-scale": { id: "large-scale", en: "Developments", fa: "پروژه‌های کلان", ar: "المشاريع الكبرى" },
+};
+
+const exteriorPlaceholders = [
+  "/placeholders/arch-01.svg",
+  "/placeholders/arch-02.svg",
+  "/placeholders/arch-03.svg",
+  "/placeholders/arch-04.svg",
+  "/placeholders/arch-05.svg",
+  "/placeholders/arch-06.svg",
+];
+
+// A project with no photography keeps a neutral placeholder on its Visual View
+// card. Its page shows no hero or gallery rather than an image of nothing.
+const placeholderImages = (index: number): ProjectImages => ({
+  cover: exteriorPlaceholders[index % exteriorPlaceholders.length],
+  exterior: [],
+  interior: [],
+});
+
+const raw: ReadonlyArray<readonly [string, string, string, CategoryId]> = [
+  ["R01","بام جمشیدیه","BAM Jamshidieh","residential"],
+  ["R02","بام البرز","BAM Alborz","residential"],
+  ["R03","بام مهماندوست","BAM Mehmandoost","residential"],
+  ["R04","بام نسرین","BAM Nasrin","residential"],
+  ["R05","بام نیاوران ۱","BAM Niavaran 01","residential"],
+  ["R06","بام نیاوران ۲","BAM Niavaran 02","residential"],
+  ["R07","بام نیاوران ۳","BAM Niavaran 03","residential"],
+  ["R08","بام نیلوفر","BAM Niloufar","residential"],
+  ["R09","بام چوبینه","BAM Choobineh","residential"],
+  ["R10","بام فرشته","BAM Fereshteh","residential"],
+  ["R11","بام زعفرانیه (سروستان)","BAM Zafaraniyeh (Sarvestan)","residential"],
+  ["R12","بام راد","BAM Rad","residential"],
+  ["R13","بام سیمین‌دخت","BAM Simindokht","residential"],
+  ["R14","بام فرزانه","BAM Farzaneh","residential"],
+  ["R15","بام سپید","BAM Sepid","residential"],
+  ["R16","بام دربند ۱","BAM Darband 01","residential"],
+  ["R17","بام دربند ۲","BAM Darband 02","residential"],
+  ["R18","بام نارنجستان","BAM Narenjestan","residential"],
+  ["R19","بام نیایش","BAM Niayesh","residential"],
+  ["R20","بام سامان","BAM Saman","residential"],
+  ["R21","بام مهتاب","BAM Mahtab","residential"],
+  ["R22","بام مریم","BAM Maryam","residential"],
+  ["R23","بام دربندسر","BAM Darbandsar","residential"],
+  ["R24","بام آدرس چالوس","BAM Address Chalous","residential"],
+  ["T01","بام سنتر - دفتر مرکزی","BAM Center — Head Office","commercial-leisure"],
+  ["T02","بام سنتر فرمانیه","BAM Center Farmanieh","commercial-leisure"],
+  ["T03","آوان سنتر","Avaan Center","commercial-leisure"],
+  ["T04","بام سنتر شریعتی","BAM Center Shariati","commercial-leisure"],
+  ["T05","بام سنتر یگانه","BAM Center Yeganeh","commercial-leisure"],
+  ["T06","بام سنتر کامرانیه","BAM Center Kamranieh","commercial-leisure"],
+  ["T07","مجتمع تجاری نیایش","Niayesh Commercial Complex","commercial-leisure"],
+  ["T08","باشگاه سوارکاری بام","BAM Equestrian Club","commercial-leisure"],
+  ["T09","بام‌لند","Bamland","commercial-leisure"],
+  ["T10","دریاچه مصنوعی خلیج فارس","Persian Gulf Artificial Lake","commercial-leisure"],
+  ["T11","هتل آراز","Araz Hotel","commercial-leisure"],
+  ["T12","بام سنتر بخارست","BAM Center Bokharest","commercial-leisure"],
+  ["T13","بام سنتر وصالی","BAM Center Vesali","commercial-leisure"],
+  ["T14","بام آدرس شیراز","BAM Address Shiraz","commercial-leisure"],
+  ["M01","پروژه ۱۰۰۲ واحدی بوستان هشتگرد","Boostan Hashtgerd 1002-Unit Project","large-scale"],
+  ["M02","پروژه ایران‌خودرو","Iran Khodro Project","large-scale"],
+  ["M03","بوستان عسلویه","Boostan Asaluyeh","large-scale"],
+  ["M04","گلستان مشکین‌شهر","Golestan Meshgin Shahr","large-scale"],
+  ["M05","شهرک بام لند شیراز","BAM Land Shiraz Township","large-scale"],
+  ["H01","بیمارستان نیکان","Nikan Hospital","healthcare"],
+  ["H02","کلینیک عرفان","Erfan Clinic","healthcare"],
+  ["H03","مرکز ملی سرطان","National Cancer Center","healthcare"],
+  ["H04","بیمارستان نیکان غرب","Nikan West Hospital","healthcare"],
+  ["H05","بیمارستان سپید","Sepid Hospital","healthcare"],
+  ["H06","درمانگاه تخصصی شهرداری منطقه ۱۴","District 14 Specialized Clinic","healthcare"],
+  ["H07","کلینیک طهرانی","Tehrani Clinic","healthcare"],
+  ["H08","کلینیک نیکان","Nikan Clinic","healthcare"],
+  ["H09","بیمارستان نیکان نگین","Nikan Negin Hospital","healthcare"],
+  ["H10","طرح توسعه نیکان","Nikan Hospital Expansion","healthcare"],
+  ["I01","311","311","international"],
+  ["I02","B77","B77","international"],
+  ["I03","X11","X11","international"],
+  ["I04","تاجیک مال","Tajik Mall","international"],
+  ["I05","ساختمان مسکونی رویال","Royal Residential Building","international"],
+];
+
+function slugify(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/—/g, "-")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+export const projects: Project[] = raw.map(([code, titleFa, titleEn, categoryId], index) => {
+  const content = projectContent[code];
+  return {
+    code,
+    slug: slugify(titleEn),
+    title: { en: titleEn, fa: titleFa },
+    category: projectCategories[categoryId],
+    description: content?.description,
+    images: content?.images ?? importedProjectImages[code] ?? placeholderImages(index),
+    location: { ...content?.location, ...approvedLocations[code] },
+    facts: content?.facts ?? {},
+  };
+});
+
+export function getProject(slug: string) {
+  return projects.find((project) => project.slug === slug);
+}
+
+export function getCoverImage(project: Project): string | undefined {
+  return project.images.card ?? project.images.cover ?? project.images.exterior[0];
+}
+
+export function getProjectByCode(code: string) {
+  return projects.find((project) => project.code === code);
+}
+
+// True when the project has real photography rather than a neutral placeholder.
+export function hasPhotography(project: Project) {
+  return project.images.exterior.length > 0;
+}

@@ -1,0 +1,1872 @@
+{
+ "files": {
+  "public/projects/bam-jamshidieh/exterior/exterior-01.jpg": {
+   "sourceSha": "0014fa559725c29bd4eb1dab68dba944015ea26014e9e639017cb428f2e107e3",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-jamshidieh/exterior/exterior-02.jpg": {
+   "sourceSha": "edcd80baec4cd9237e4d180011c5c69cb5cf7abae46ba54803446778943d0d5f",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-jamshidieh/exterior/exterior-03.jpg": {
+   "sourceSha": "67464b98639104e5d29a39dda85a12dda1da360fa8d9e444dc012f9fb8df1a51",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-jamshidieh/exterior/exterior-04.jpg": {
+   "sourceSha": "c3ffef1b8be2de039e63ff19dd87986fb4e7fa9210d2b211c84c780f993cb784",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-jamshidieh/exterior/exterior-05.jpg": {
+   "sourceSha": "9524fcd2e7bae19750146112999fb8e254a9757a2e87bb3d0c331919a8be5d79",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-jamshidieh/interior/interior-01.jpg": {
+   "sourceSha": "d8067eed5500e277292fdfba9b8f5227bd5989656066a78f7db5a7c877f47813",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-jamshidieh/interior/interior-02.jpg": {
+   "sourceSha": "1ffcba7b012e649629dc80ad1822cd503c2faa08d3554320faf76ad11e8a4d42",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-jamshidieh/interior/interior-03.jpg": {
+   "sourceSha": "019b7ca488865da8840b5d71fe59405bed8b0604ab9081648279a8f5a98a3912",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-jamshidieh/interior/interior-04.jpg": {
+   "sourceSha": "c7b64892c6379c83233c22c6bd664fe41e3aeec94788a133512753f854dd5426",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-jamshidieh/interior/interior-05.jpg": {
+   "sourceSha": "4c5d1d583d2369e8a4200a3b17af55a08ec381b2bdeaf61c1ca373cc791db364",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-jamshidieh/interior/interior-06.jpg": {
+   "sourceSha": "501f349031c93dd79a51001f32d286f57b23ec5c203be77ec596a4d377b6b651",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-jamshidieh/interior/interior-07.jpg": {
+   "sourceSha": "afff5d8f52db8cefcfab48ad1c13887ce04d04ba0fa0bd375742eda0423eedb2",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-jamshidieh/interior/interior-08.jpg": {
+   "sourceSha": "ef56590bc0b497d5d37f8d62e864278c265d6b13cf511e85513aacda2349891e",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-jamshidieh/card.jpg": {
+   "sourceSha": "0014fa559725c29bd4eb1dab68dba944015ea26014e9e639017cb428f2e107e3",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-alborz/exterior/exterior-01.jpg": {
+   "sourceSha": "63d77276cf5336dcaabfe4169f813f7f925750c9ec86bcb4f59db523f0f5e30e",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-alborz/exterior/exterior-02.jpg": {
+   "sourceSha": "b600101823ad3e45c5eb3cabadadb5cf5840173e19fc725c1a7a31d60aa1bc14",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-alborz/exterior/exterior-03.jpg": {
+   "sourceSha": "b495fda499c643b94fc4ca60269e1544d104ca1812bd8912952347b84d3f64f9",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-alborz/exterior/exterior-04.jpg": {
+   "sourceSha": "18df31c8fac769dbfcda503bcf78a969e46923c5953da99e6f0a83c727e2baa3",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-alborz/exterior/exterior-05.jpg": {
+   "sourceSha": "de82fa0b010e2266032491a5f0842ad95a0ddbb0d7954dca70ca233031f5d058",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-alborz/exterior/exterior-06.jpg": {
+   "sourceSha": "22bcb46930250a6d3b37b7212306539154bc8b5997e87458131a0ace1518035e",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-alborz/exterior/exterior-07.jpg": {
+   "sourceSha": "e1a5d3dfd194bd3e631d957802167de1acd750899f63d0a18b3578b5235c33d2",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-alborz/exterior/exterior-08.jpg": {
+   "sourceSha": "9c0b6d6709d70b2acc1c42009767d2fb5adf56dfa845a799a11a80c97d95f17a",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-alborz/card.jpg": {
+   "sourceSha": "63d77276cf5336dcaabfe4169f813f7f925750c9ec86bcb4f59db523f0f5e30e",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-mehmandoost/exterior/exterior-01.jpg": {
+   "sourceSha": "7c87b289804228f94fc9a6f906eaeb3acb7f38576c250d6fccf0596bea517b48",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-mehmandoost/exterior/exterior-02.jpg": {
+   "sourceSha": "ae69a0697541f9bb22d2f4f63ab086973c0bfcf5fe9d2458fa7bc67930034999",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-mehmandoost/exterior/exterior-03.jpg": {
+   "sourceSha": "07782fd2d30acd8e20dc8362a2ae394bc0734a6222f7a8cdb0da9486d6b06b18",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-mehmandoost/exterior/exterior-04.jpg": {
+   "sourceSha": "b5346089f03dfb38cb1f89767c5b25cb0726fb390a225d68e2df96367c319e1e",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-mehmandoost/interior/interior-01.jpg": {
+   "sourceSha": "0bafdfedd43130a6542ef2bd72c3c4d87c1b3649fd907d3beba899d414fc4174",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-mehmandoost/interior/interior-02.jpg": {
+   "sourceSha": "99753c9e0f90c9f5a488bada1174dec424e08eeb688dbf39dd994926b3321bc3",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-mehmandoost/interior/interior-03.jpg": {
+   "sourceSha": "70a9db2c856dae880ee3555a0f70ba912825f29a5606bde73b82df6c571b1575",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-mehmandoost/interior/interior-04.jpg": {
+   "sourceSha": "9a1bf31c4f509e151f2da840424a744f3db4818e8bc782dec7799f4dddf11b95",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-mehmandoost/interior/interior-05.jpg": {
+   "sourceSha": "b850c5ef462ac3653e578f65694548c58dd9566757492d3b0179f3d725a45a93",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-mehmandoost/interior/interior-06.jpg": {
+   "sourceSha": "8efdbd18f8c23573f5a8d7cccb8484cdd591251e819f4882816b09fbb7ae515a",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-mehmandoost/card.jpg": {
+   "sourceSha": "7c87b289804228f94fc9a6f906eaeb3acb7f38576c250d6fccf0596bea517b48",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-nasrin/exterior/exterior-01.jpg": {
+   "sourceSha": "42fa488f295720eba92045b291e6fabbc7c2b32a2530ba26e1067a6e532d8e47",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-nasrin/exterior/exterior-02.jpg": {
+   "sourceSha": "b3c0a889dcbfa9a7b0de4620caf6e3d6f94798c44a95951f2aabab2fd0d18e81",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-nasrin/exterior/exterior-03.jpg": {
+   "sourceSha": "487afc9218d0e180f11855d58e3b8e36b493e8b8ac8b5a5d51be4072e463dedf",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-nasrin/exterior/exterior-04.jpg": {
+   "sourceSha": "b6912754079dfd8b226b47214e3d49924d3e92fe5303454d1c198fa4644501a3",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-nasrin/interior/interior-01.jpg": {
+   "sourceSha": "06421894a821d1c01cbf5b2738f9a28a0b1e93931e649143222db3dc9c07acec",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-nasrin/interior/interior-02.jpg": {
+   "sourceSha": "1bb0f94516e9980f6aced96e961d85676c31f25b77d2ca3d4eda34072e6bda62",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-nasrin/interior/interior-03.jpg": {
+   "sourceSha": "4e76f341fd86e1049cd92e4f4c699efcbca95f516fe8aacf5527436ad3d5c2c9",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-nasrin/interior/interior-04.jpg": {
+   "sourceSha": "27e8f37ba51eaf8d70159188c0324114febe78207ca572de62e49690bdc773cc",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-nasrin/card.jpg": {
+   "sourceSha": "42fa488f295720eba92045b291e6fabbc7c2b32a2530ba26e1067a6e532d8e47",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-niavaran-03/exterior/exterior-01.jpg": {
+   "sourceSha": "f898845b955a4247641fc0e23cc94ad6808d8a67b58cca6f12b5209fc041165e",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niavaran-03/exterior/exterior-02.jpg": {
+   "sourceSha": "b93cf6f7b0cc786c5280892f960a7046ed353bb7e7708b13f337081956cf134d",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niavaran-03/exterior/exterior-03.jpg": {
+   "sourceSha": "e7eabfefcb68c466362283af6c97123937b2d7de604d5c9fcf61da40c417452e",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niavaran-03/interior/interior-01.jpg": {
+   "sourceSha": "842794a13ae217f9756bdd6888a441134e2c9aff94f2efdcf69a1ee22f4cdc17",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niavaran-03/interior/interior-02.jpg": {
+   "sourceSha": "d440935052b3fcf80c5f50506c4f016bb96103982ba5edbd3c43665df3de41e5",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niavaran-03/interior/interior-03.jpg": {
+   "sourceSha": "bd24d16045bd95149b2fed16466903ac6539f846c2e18fcd26de693e6574c9ad",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niavaran-03/interior/interior-04.jpg": {
+   "sourceSha": "2b90e3b24bc6dc2e9ae11017648b01182a67525d2eedbb27bc630f5a41602b82",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niavaran-03/interior/interior-05.jpg": {
+   "sourceSha": "cc22391736d05ef2b0d14d3356ba2931417558095d365e67999262af79651972",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niavaran-03/interior/interior-06.jpg": {
+   "sourceSha": "5c81886beb0b4b1ccdee79a09ec222ddeeca8c23e393736f9a90578afb2521b5",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niavaran-03/card.jpg": {
+   "sourceSha": "f898845b955a4247641fc0e23cc94ad6808d8a67b58cca6f12b5209fc041165e",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-niloufar/exterior/exterior-01.jpg": {
+   "sourceSha": "4e364cfb41f6c41ec6a6b5f29f34885a2280381c879d8ea8000385d0a72d4ff4",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niloufar/exterior/exterior-02.jpg": {
+   "sourceSha": "2464898bf8d877ac98c5e4d4b9a27b4f73a9fad0b602b1d39a31650aa98df41a",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niloufar/exterior/exterior-03.jpg": {
+   "sourceSha": "3f875a1ffc25ebf135b1bda8a3df0078c53253bf721e21d2d0ab157f2b5984cf",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niloufar/exterior/exterior-04.jpg": {
+   "sourceSha": "b5581f1bb1746772b26132bb7d2de574dfc91b788849b42bdd59fcaab9694ca0",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niloufar/exterior/exterior-05.jpg": {
+   "sourceSha": "60ac1dcd53d5964eb85b97c81bd2db76248ad83a95f54e5edf6e4e8d344a98cb",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niloufar/exterior/exterior-06.jpg": {
+   "sourceSha": "73ebd57ce919d0226e5ac82f734795da5fd6d1f808edb5711a89d6392bb1ef08",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niloufar/exterior/exterior-07.jpg": {
+   "sourceSha": "1f89dd459613b69a193c82d530042b6a7828913fce75da978857c26dd25aa088",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niloufar/exterior/exterior-08.jpg": {
+   "sourceSha": "86a88b7551cc0683113a52af1cb34a06c4c36257802857ebae74d0600e338106",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niloufar/interior/interior-01.jpg": {
+   "sourceSha": "371a0308c470d13bcce176ed22a5980aa63fe4c75c273fdaa9da958a09cd1a45",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niloufar/interior/interior-02.jpg": {
+   "sourceSha": "87321f33353d84c5d04a5b0641eed5567a0f9650767ae9f86ceeb493c318e764",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niloufar/interior/interior-03.jpg": {
+   "sourceSha": "3bb4cc7cfc151f556e6b8ea6be3bc6311ec1d76cf1293272c9966cd2f353c348",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niloufar/interior/interior-04.jpg": {
+   "sourceSha": "0cb717e97eb25153167e206bb57f7be2772b0d7fc6f1210e7f3ff1cc0b1730c1",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niloufar/interior/interior-05.jpg": {
+   "sourceSha": "8dbc2adffca40d0e27310e80dbc4815d229d6b148fe959ecfdc2032f15b771ca",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niloufar/interior/interior-06.jpg": {
+   "sourceSha": "53e41fb2e813373e24de62bcc724b594c5822a67514412e339714ac862367017",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niloufar/interior/interior-07.jpg": {
+   "sourceSha": "af7ad37243fdb19bddd9e2e836f81258f4dc2659bf9ed4ad884f2e9f03df9b16",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niloufar/interior/interior-08.jpg": {
+   "sourceSha": "d7ba3f47cb9dc58185727b1b5ef0058624ef96bc780617461ea9873f59a0ef88",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-niloufar/card.jpg": {
+   "sourceSha": "4e364cfb41f6c41ec6a6b5f29f34885a2280381c879d8ea8000385d0a72d4ff4",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-choobineh/exterior/exterior-01.jpg": {
+   "sourceSha": "a80e07ba12aa907feefe31dd3ee336495f95322dca03f8e8e3b176930c2ecc53",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-choobineh/exterior/exterior-02.jpg": {
+   "sourceSha": "75895ed755fd7aa90def4b6f58448e40b6e6cbe91b478588995a9216c247641c",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-choobineh/exterior/exterior-03.jpg": {
+   "sourceSha": "3e28f86929e4853657579cad0f5a01872848bf5a18ef3cbe871cdd883fa9a430",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-choobineh/exterior/exterior-04.jpg": {
+   "sourceSha": "e42036c2bb05a257f02b8d2f05a55ca12be6d99a468c83be9acd91e6beb830ac",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-choobineh/exterior/exterior-05.jpg": {
+   "sourceSha": "eeffa5b3f9bd62c9e70c31719fa9bdfa62d6261a931577f57c75af02b13a39f4",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-choobineh/exterior/exterior-06.jpg": {
+   "sourceSha": "1a25553e058b0bcef0f29a129ddc0d0d1080c3c92e240c4c8dc4d8974df5c69c",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-choobineh/interior/interior-01.jpg": {
+   "sourceSha": "a1de74c0a6223d1e7035a75236bc45ae4d4dbadc94950ea0bba88bf4d14c9f61",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-choobineh/interior/interior-02.jpg": {
+   "sourceSha": "9fd31e33d2a357278da8efcb8649290c157a49b42d106a0397c160b01e5ed58d",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-choobineh/interior/interior-03.jpg": {
+   "sourceSha": "db604f48dbbc761e556acc2ef33bcdfda506a95106971c581971578af464a941",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-choobineh/interior/interior-04.jpg": {
+   "sourceSha": "b0c18286f1c47781badf7fc12b1c34e2d15a7787169db0add0c5aa38fce118c3",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-choobineh/card.jpg": {
+   "sourceSha": "a80e07ba12aa907feefe31dd3ee336495f95322dca03f8e8e3b176930c2ecc53",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-fereshteh/exterior/exterior-01.jpg": {
+   "sourceSha": "a0b9239f4a7eb75fc59e67967012c1a3604cad04e96c1e4ec4eaf9fa2cf1f48a",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-fereshteh/interior/interior-01.jpg": {
+   "sourceSha": "f517a7da17d5f76ce68155e54bfefee3ec129ca4185463d35f964f260aee45cc",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-fereshteh/interior/interior-02.jpg": {
+   "sourceSha": "04d2293f92b91bfb5b8be8817a24801d185efb8598069263b4a11264a554e942",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-fereshteh/interior/interior-03.jpg": {
+   "sourceSha": "3331d50c7462e9dab6b468f3b305909615c53865b6643671e344728cb30cbf5f",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-fereshteh/interior/interior-04.jpg": {
+   "sourceSha": "ab94ea545ff380421a3f4f961e95a14e154465a25f33a2fd3de91228ac834353",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-fereshteh/interior/interior-05.jpg": {
+   "sourceSha": "f11cb0e3f6f8daa62a74062f06c4a7f05620f46e76d1ce742baa31c76bb4a535",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-fereshteh/interior/interior-06.jpg": {
+   "sourceSha": "142fda9aa17a5562d5e684fcb9196f3f6800e5c82a0b8e1a7b543f4c0d5c4a1d",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-fereshteh/interior/interior-07.jpg": {
+   "sourceSha": "f5b7a87be596634d123cb7cd8ab93a8cbaddeb7691b911095d7683f66e78ed5f",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-fereshteh/interior/interior-08.jpg": {
+   "sourceSha": "dd484da26b23f69a2eba8b6cdcda77f1ee6f9803640cb795dc0c547d699441b8",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-fereshteh/interior/interior-09.jpg": {
+   "sourceSha": "cc999f1cc1347ac92800bf53d489256c29efdbd2b624415d8f328bef78ca9f32",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-fereshteh/interior/interior-10.jpg": {
+   "sourceSha": "80fe1efeeb56b29d9761bbdabe717c6815ecb2cf71fcdba6dd09381bec7da6f8",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-fereshteh/card.jpg": {
+   "sourceSha": "a0b9239f4a7eb75fc59e67967012c1a3604cad04e96c1e4ec4eaf9fa2cf1f48a",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/exterior/exterior-01.jpg": {
+   "sourceSha": "e0cb0fed41e1f972cf6a43bbe14c9acb69574ff6c591485d39ba2ad2caa905d2",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/exterior/exterior-02.jpg": {
+   "sourceSha": "cd21e579e437b9ea29094e22aa505379019583a38f26d0b7d435bca4d16390e8",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/exterior/exterior-03.jpg": {
+   "sourceSha": "7e418d90a87f4bcb6b1f083b3d06dd0490320994fbda37a4365456f2835e86e0",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/exterior/exterior-04.jpg": {
+   "sourceSha": "f7b15231b80d085d7d285141e67723604b48644f350c7a24b2bce2fe20f5d4d3",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/exterior/exterior-05.jpg": {
+   "sourceSha": "002a3a9a7a8d0b6f55767bcdd10a4f45f6cd6220c964cb9b97c2365831a68149",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/exterior/exterior-06.jpg": {
+   "sourceSha": "18ac65c3becd956ecfd2156732bf20f1105d9d9a20f89d62f18aaffd9b62a09e",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/interior/interior-01.jpg": {
+   "sourceSha": "decbf4142a4bddb364ea3a815c4b8c9e34e8f6b67e12da8b2941385181c9e806",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/interior/interior-02.jpg": {
+   "sourceSha": "796922fb328f3339a4b1b481564e3fb7da6970651858cde147998c68c0190d98",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/interior/interior-03.jpg": {
+   "sourceSha": "5070912c616ca1bb84a209ca27e1aa08ebe9b6fe37e80c535060b13a065bd2af",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/interior/interior-04.jpg": {
+   "sourceSha": "6e434b263060c69f6f5a3339fe4e46fef2953d11fee81847aa598eeda029af5e",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/interior/interior-05.jpg": {
+   "sourceSha": "35d857783c1272791d5a89b2585eb347cae234d584fcede89bb20ac6965988df",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/interior/interior-06.jpg": {
+   "sourceSha": "60e150bab55fd6196c0bd390fe30d956e54ae49c89ff73defc3f3b82056a4262",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-zafaraniyeh-sarvestan/card.jpg": {
+   "sourceSha": "e0cb0fed41e1f972cf6a43bbe14c9acb69574ff6c591485d39ba2ad2caa905d2",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-rad/exterior/exterior-01.jpg": {
+   "sourceSha": "2c9b564b734ae476d182293c2cabe6d8a949d2cad838a49b8379fd253347659a",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-rad/exterior/exterior-02.jpg": {
+   "sourceSha": "7393f26a0e2ead025d2ad835acd60eb1661c294cd44f5033bc36aa38b042b7a8",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-rad/exterior/exterior-03.jpg": {
+   "sourceSha": "18ec255d9952b17dbd686cb21b3c4f2476f5aa668386ee6cfb18a5819b59a0de",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-rad/exterior/exterior-04.jpg": {
+   "sourceSha": "357be62ba7f9f252f4a40afcdb7aec3ef04b1e69e01822428500bf6892898781",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-rad/exterior/exterior-05.jpg": {
+   "sourceSha": "feeae7280bd33b29f934538f59fb4d7dcd3c3eef85f5d1f88f192ab5cface005",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-rad/interior/interior-01.jpg": {
+   "sourceSha": "2f376c9f0eb5c93e6cca20b1144cb5a7d74eada9a6a795ad22d3c901399a1cfd",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-rad/interior/interior-02.jpg": {
+   "sourceSha": "b15a718f2e9b8ff9380e1d146ec259c665b530399c125e7e6bec147c0d8d90f5",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-rad/interior/interior-03.jpg": {
+   "sourceSha": "d2d94f85b851d1c5e3d99e344c68bbce9799a856408be8e5fb7e8cd1b786443f",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-rad/interior/interior-04.jpg": {
+   "sourceSha": "09cf6636e1f1f79b45017eef2cda1ff83bb0f882dc6b6a08ad680f8b8deccee5",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-rad/interior/interior-05.jpg": {
+   "sourceSha": "0bcfd72aa11268a83b5cb9caaf689c05a593f3793b0b1ef2b78814f5c9c4cece",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-rad/interior/interior-06.jpg": {
+   "sourceSha": "a121e90ee26abc0064ec03a3eab577fece2c9f5f4be700ba257890133eb1466a",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-rad/card.jpg": {
+   "sourceSha": "2c9b564b734ae476d182293c2cabe6d8a949d2cad838a49b8379fd253347659a",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-simindokht/exterior/exterior-01.jpg": {
+   "sourceSha": "170a4b79df0978f53957454ddf47f80dfcf4f7b3ba9d0758c885d6d57a7b3c3f",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-simindokht/exterior/exterior-02.jpg": {
+   "sourceSha": "83c1bdc20ee39c57bc1e2e17b8f81ca6c56160b8c60cf92f5dac64a5f11a0af5",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-simindokht/exterior/exterior-03.jpg": {
+   "sourceSha": "77c1665afc75150a5383c1e2f720aec8112ec0ebca62714676b76a03f248e722",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-simindokht/exterior/exterior-04.jpg": {
+   "sourceSha": "0237ce94ac751df18a73f2587c7ce1db66fce8c07556cf64e7e211e6275f0c59",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-simindokht/exterior/exterior-05.jpg": {
+   "sourceSha": "d2f5444584c75ac6dfa7abfde1523f3faa469814fc8b68a8740c0854562e3381",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-simindokht/exterior/exterior-06.jpg": {
+   "sourceSha": "8c3b3972c3eb78f19f95b20c6f87a71fc102d4d59bd476a1e018c6b97dde5fd8",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-simindokht/exterior/exterior-07.jpg": {
+   "sourceSha": "a362df0e4444920aa5c975a76392544c3d9d844476778ca6d4de1294f1a1d3a1",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-simindokht/interior/interior-01.jpg": {
+   "sourceSha": "3329e0770b31f4ba9e1bd2eb9f8c58266e9ea8d1db2efd212970d4f432af991e",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-simindokht/interior/interior-02.jpg": {
+   "sourceSha": "45788a87befc3a6240f064c30e4354f4e4a28da069b59cb6edaf95941467203d",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-simindokht/interior/interior-03.jpg": {
+   "sourceSha": "afdea8c9d73c30e1f5c0076e959cdc37d1efb6250ad028ac4cea57799e14b3f5",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-simindokht/interior/interior-04.jpg": {
+   "sourceSha": "18ddbcfd22763848082d661e3043f0170e020f697437ca468a68355141c0215e",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-simindokht/interior/interior-05.jpg": {
+   "sourceSha": "cfb52a948153506acffd1e0fd7725853dd859eaaa152045581143443e8f6050f",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-simindokht/interior/interior-06.jpg": {
+   "sourceSha": "aaef30dfe96f2311a94894e4abb564bec2db594e10c3f39d66fff18829ccfcf7",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-simindokht/interior/interior-07.jpg": {
+   "sourceSha": "f276423707eae705fc90ac303475fba8d1007ed370e6c02568a407f4969c72de",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-simindokht/interior/interior-08.jpg": {
+   "sourceSha": "e2ed1e12a1a2c0b25fb45dfd671a95bab6a079f35a2cf98f8a3630b385189043",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-simindokht/card.jpg": {
+   "sourceSha": "170a4b79df0978f53957454ddf47f80dfcf4f7b3ba9d0758c885d6d57a7b3c3f",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-farzaneh/exterior/exterior-01.jpg": {
+   "sourceSha": "1e2d42da2e1f71ee8a06d40be1b684a8863af6ab4933dd1f960b542119de2abf",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-farzaneh/exterior/exterior-02.jpg": {
+   "sourceSha": "aa051134ffba56f9786d558b12ae8ef9db786d7a49d7e5147e252f1565c5454a",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-farzaneh/exterior/exterior-03.jpg": {
+   "sourceSha": "3e2d4151525a85bf478a7f834723e8e32ac4798eb2f5842584c2ebde62030d1d",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-farzaneh/exterior/exterior-04.jpg": {
+   "sourceSha": "810b1993514ea7fc9d7529be6f467b71b3c8eb927a5766f95fe97f3a89c7bd6c",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-farzaneh/exterior/exterior-05.jpg": {
+   "sourceSha": "1b927670464f8ea8fbef60d2a1249a7698d57299803672a6e5f2e917d0b4eb44",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-farzaneh/exterior/exterior-06.jpg": {
+   "sourceSha": "410194325bbf19d29aa9d49d8747f0d0a1b9507d978fde9f881abe533a4dffdb",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-farzaneh/exterior/exterior-07.jpg": {
+   "sourceSha": "d90e1576ef8c639e3158f571504136b6e62016020204d67e735ce43f7d49359e",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-farzaneh/interior/interior-01.jpg": {
+   "sourceSha": "10ed9d4a5b52dde4fa1432993ae6506c6d683a4a13f2b2c1fcf3390c75d251af",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-farzaneh/interior/interior-02.jpg": {
+   "sourceSha": "5f54dd2b35758d6cc3254ae2efc0e4af2c22f5b86c55cba3325b7a3c8738ab86",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-farzaneh/interior/interior-03.jpg": {
+   "sourceSha": "2918a27bea291b0939e940f9b6774f587db636d27661c87570e90da0e59cbb18",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-farzaneh/interior/interior-04.jpg": {
+   "sourceSha": "450c5fbcd0d516e1246462c5dfd567ec374c40dbbaf2b2307c667588d90d76d8",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-farzaneh/interior/interior-05.jpg": {
+   "sourceSha": "7de23d45d6227a6f1e1c632e4ca8ed67b59ee80531b3603b8292d63a2a03567b",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-farzaneh/interior/interior-06.jpg": {
+   "sourceSha": "a2d6290e21a6ffa7d85283c77d9abb1e46e5456ebbb5b5303b2ced73cd241fc9",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-farzaneh/interior/interior-07.jpg": {
+   "sourceSha": "9ca894979df766b24c6c625bb4a0d3f97ba48e700fbd331da9852d4283f9796a",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-farzaneh/interior/interior-08.jpg": {
+   "sourceSha": "718334371b3ea9ce5c3f4b6ce254ac7eabdbb8a164fa6baa8410d8166488dd17",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-farzaneh/card.jpg": {
+   "sourceSha": "1e2d42da2e1f71ee8a06d40be1b684a8863af6ab4933dd1f960b542119de2abf",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-sepid/exterior/exterior-01.jpg": {
+   "sourceSha": "87aa0af7bb09983d90d75147de286e0aaf07c3f0756e024dae39c08f0a8cfabe",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-sepid/exterior/exterior-02.jpg": {
+   "sourceSha": "b5b032f1f5f3e77e758aff0878e395a8bd18472051976d51dfcfe54973dabddc",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-sepid/exterior/exterior-03.jpg": {
+   "sourceSha": "840ebf961e3dc62bc903a3e7b15fa1ab962afab68a3a193ba766e955ea3901d2",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-sepid/exterior/exterior-04.jpg": {
+   "sourceSha": "a950ef18767eb90fc5fa30021bc09e89b70f26891538e017dcad0d93bd13962b",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-sepid/exterior/exterior-05.jpg": {
+   "sourceSha": "c57b7bd4a99033a68d66f4270926906da0572f03cc563a9b1dfc971dd8600d61",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-sepid/exterior/exterior-06.jpg": {
+   "sourceSha": "f72e38727163b5627a4fc0f12e763a38015ec80713854a714395f512bda9f871",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-sepid/interior/interior-01.jpg": {
+   "sourceSha": "92d059e43203a131e0bacc6a17a8285a79559fcbb6ed942f9857551caa36e3c4",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-sepid/interior/interior-02.jpg": {
+   "sourceSha": "5cca012b3d0a7db55f5ce2d85b8562d3ee497e21f54146f0f40a6947d7655526",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-sepid/interior/interior-03.jpg": {
+   "sourceSha": "b17be6e377f8493466a1a02ff4cd1a8e21671033f74d7f8b0c0240fd623e602c",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-sepid/interior/interior-04.jpg": {
+   "sourceSha": "22cfb374ebb56ce29ac28123db9c16ecd859a72f1daa2f4eb3ce8ec23fc36cf3",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-sepid/card.jpg": {
+   "sourceSha": "87aa0af7bb09983d90d75147de286e0aaf07c3f0756e024dae39c08f0a8cfabe",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-darband-01/exterior/exterior-01.jpg": {
+   "sourceSha": "82275e382262dcb836a27822619e2905dc3fd59ac0479fd8f324c1d7613ed391",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-darband-01/exterior/exterior-02.jpg": {
+   "sourceSha": "0fab467663eb08b0cd101850bfa16055636ef74fc240f371fde68f783faf3830",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-darband-01/card.jpg": {
+   "sourceSha": "82275e382262dcb836a27822619e2905dc3fd59ac0479fd8f324c1d7613ed391",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-darband-02/exterior/exterior-01.jpg": {
+   "sourceSha": "605e7e1e9d356f336184709d039adf83a6f4b17665e6425c00735a4f4c51fc58",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-darband-02/card.jpg": {
+   "sourceSha": "605e7e1e9d356f336184709d039adf83a6f4b17665e6425c00735a4f4c51fc58",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-narenjestan/exterior/exterior-01.jpg": {
+   "sourceSha": "9f8b60982779c9a0f8ac0ffb5b22377c667888fc0619280c54dac667265cbeab",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-narenjestan/exterior/exterior-02.jpg": {
+   "sourceSha": "30185c5a07caea8041931682630c8c20ad59a3e9ab74c5e0fcc5407c1e5fb527",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-narenjestan/exterior/exterior-03.jpg": {
+   "sourceSha": "c9848a959191b54eac60ce03a429f16dc47978c071ebdf91ec67813b7a8ec542",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-narenjestan/card.jpg": {
+   "sourceSha": "9f8b60982779c9a0f8ac0ffb5b22377c667888fc0619280c54dac667265cbeab",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-niayesh/exterior/exterior-01.jpg": {
+   "sourceSha": "f77e46afd393c1706a67d41ee1937b6a5631e5ca0d1c5cc1e973101189038482",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niayesh/exterior/exterior-02.jpg": {
+   "sourceSha": "57b06fa118ef87a3e2aee5e9788883f8ace65dbf0679586b1eaacd9e632cc2fd",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niayesh/exterior/exterior-03.jpg": {
+   "sourceSha": "ebfd106e6c6c2a70804333377212d8b752534c7c2df46cc27938dd743974a74c",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-niayesh/card.jpg": {
+   "sourceSha": "f77e46afd393c1706a67d41ee1937b6a5631e5ca0d1c5cc1e973101189038482",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-saman/exterior/exterior-01.jpg": {
+   "sourceSha": "53a94a8f13232c5e184e52972cbb51b7aad26fc1403b5b3a74951c1a32b3c863",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-saman/card.jpg": {
+   "sourceSha": "53a94a8f13232c5e184e52972cbb51b7aad26fc1403b5b3a74951c1a32b3c863",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-maryam/exterior/exterior-01.jpg": {
+   "sourceSha": "5986a942e32c22280ef6522ae229a05f13fc5c25a831d50ca5ebcfcaa1ed5cb8",
+   "profile": "2800/84/inset-0.05"
+  },
+  "public/projects/bam-maryam/exterior/exterior-02.jpg": {
+   "sourceSha": "a8bbf1ff981fb5af1cc03856d313fc78052b0ac4eb83b662105d4f6d9bd53119",
+   "profile": "2800/84/inset-0.05"
+  },
+  "public/projects/bam-maryam/exterior/exterior-03.jpg": {
+   "sourceSha": "bf74c69f916d705a0f31e7935d3d8c884130cacd28ebd30865b8d7d1f57af404",
+   "profile": "2800/84/inset-0.05"
+  },
+  "public/projects/bam-maryam/interior/interior-01.jpg": {
+   "sourceSha": "714393b403d4d8ab34eeb78e2b81a237b345bf1fb39752555a809de3d7d45f2f",
+   "profile": "2000/84/inset-0.05"
+  },
+  "public/projects/bam-maryam/interior/interior-02.jpg": {
+   "sourceSha": "2749fc9c643147c84fbb77e24e3703501d764102addf55488ac3baa6f423da60",
+   "profile": "2000/84/inset-0.05"
+  },
+  "public/projects/bam-maryam/card.jpg": {
+   "sourceSha": "5986a942e32c22280ef6522ae229a05f13fc5c25a831d50ca5ebcfcaa1ed5cb8",
+   "profile": "1400/80/inset-0.05"
+  },
+  "public/projects/bam-darbandsar/exterior/exterior-01.jpg": {
+   "sourceSha": "a7679d655590ac550264959c91ae794cc32d8e94eb511e1fd13a6838c82a0bd9",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-darbandsar/exterior/exterior-02.jpg": {
+   "sourceSha": "3421f209af0e8b3852ebf1cba267df6381417965503e4003c924925dc06226e3",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-darbandsar/exterior/exterior-03.jpg": {
+   "sourceSha": "b1f46d8da0f1a78b5c978991c73a6b332e7bc473affb0c3c7a71e59829ca528b",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-darbandsar/card.jpg": {
+   "sourceSha": "a7679d655590ac550264959c91ae794cc32d8e94eb511e1fd13a6838c82a0bd9",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-01.jpg": {
+   "sourceSha": "2182f858d1e83707150f8207f470c6df71483264977ae101dc721e0071674f31",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-02.jpg": {
+   "sourceSha": "052df2669e46c9a7a18f46cbcfec96e53efd7fc5195c1a515628e6e2981fd4da",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-03.jpg": {
+   "sourceSha": "80f3ea9c937caa7ad3a02733e3ad6da889ed1becd8191958ca12c7f1746b73d7",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-04.jpg": {
+   "sourceSha": "310b79af1cdd61c98de880da6710368c85afe49475f8bb2311c4a7a732b9dd83",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-05.jpg": {
+   "sourceSha": "6358f72e8af45031c40f57fda0b2e507f2e96e127e44ab1fa3e7add3dc284587",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-06.jpg": {
+   "sourceSha": "2fcad4878baf56268264838bed8266dcc98cea416376578090ef181e03e3e8b4",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-07.jpg": {
+   "sourceSha": "9811c4f4685e8611e2ddb6530b0c876d39c0c3aac45f938930d2f079b47076e5",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/exterior/exterior-08.jpg": {
+   "sourceSha": "146721ba5317cdee56a8dcc543b6e2ee5afeb7e3e92af8e05943aa911f645a3c",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-chalous/interior/interior-01.jpg": {
+   "sourceSha": "8e3b033c26e8e4719caf87cf863a2c72c5b961413965a8ef56f9ff41508f8ca7",
+   "profile": "2000/84/inset-0.012"
+  },
+  "public/projects/bam-address-chalous/interior/interior-02.jpg": {
+   "sourceSha": "8a63d18b2b608b7470763773d7e1b39738af077494586b067ac57e83b4a50e70",
+   "profile": "2000/84/inset-0.012"
+  },
+  "public/projects/bam-address-chalous/interior/interior-03.jpg": {
+   "sourceSha": "234a7651b2d26e24da6358e7c52502d3ce33b52dffb85864e51074df94b8a4d1",
+   "profile": "2000/84/inset-0.012"
+  },
+  "public/projects/bam-address-chalous/interior/interior-04.jpg": {
+   "sourceSha": "0d1fa6b21ac847a39e43e52b6fcf8f112d407b73a9dbfee153eb52a0b1e247a5",
+   "profile": "2000/84/inset-0.012"
+  },
+  "public/projects/bam-address-chalous/card.jpg": {
+   "sourceSha": "2182f858d1e83707150f8207f470c6df71483264977ae101dc721e0071674f31",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-center-head-office/exterior/exterior-01.jpg": {
+   "sourceSha": "832c9c5c50d1dab6fcb7c46fc8dc50ed2c67a80483d8ba8980bfe42046c08b28",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-head-office/exterior/exterior-02.jpg": {
+   "sourceSha": "115a353be850762cdd813bb0b1da9634bee33445d6536a53caa9a0a991785027",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-head-office/exterior/exterior-03.jpg": {
+   "sourceSha": "b0d0f2d9f9d34d96fd219ac410429730f82128b4f219be5a39d003e8b6882333",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-head-office/exterior/exterior-04.jpg": {
+   "sourceSha": "cf94e91f1e98dffe9f6df50baa2775b0bc67001e9ffad38d2346674efb5671f2",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-head-office/exterior/exterior-05.jpg": {
+   "sourceSha": "64e48c9845eb2e2168bc1dd807bc79a65888e9eae870b85a92e7e17f31dcdb1b",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-head-office/exterior/exterior-06.jpg": {
+   "sourceSha": "742afa26eb4537a7fee5a47cac16cb93829b85253d4ba6e748bdac70c0d4433c",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-head-office/exterior/exterior-07.jpg": {
+   "sourceSha": "b501d80ddb8c68a1db3a21101ff0ee9b70c2a11ef761982e76c8d462cf5153fc",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-head-office/interior/interior-01.jpg": {
+   "sourceSha": "72f1fb501028f7f6a7fcb6609bac849df1fbc0f444a2c138bb9ca185072a54ce",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-head-office/interior/interior-02.jpg": {
+   "sourceSha": "e966f080c9b5aa37372dcfb1e2aa3fced5c840cf769de793fb08b79a8fb805c2",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-head-office/interior/interior-03.jpg": {
+   "sourceSha": "c511b9e9a3ee1e19338c6b25f228ad551f598c8104ce30fd43aba6f507e529d3",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-head-office/interior/interior-04.jpg": {
+   "sourceSha": "350cd6b7c01de55638cec30d5201fd3cdc026618916d81874956e6fa357dca8a",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-head-office/interior/interior-05.jpg": {
+   "sourceSha": "d19a57aab2295bf7ce9c5ccd5b630d1878f74f7d17929aa8487a9b087c52167d",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-head-office/interior/interior-06.jpg": {
+   "sourceSha": "e0f4e8385052acd53d89942c9764f2649660d5cfa1b672924da23682738f6320",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-head-office/interior/interior-07.jpg": {
+   "sourceSha": "1ade5cac642e238862a49c431381095d7b3a7e8417aabfeb1bf15cbd35b75757",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-head-office/interior/interior-08.jpg": {
+   "sourceSha": "c6906a44637822afedc2276954063717f820d362105d972a0db88317c802ce5f",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-head-office/card.jpg": {
+   "sourceSha": "832c9c5c50d1dab6fcb7c46fc8dc50ed2c67a80483d8ba8980bfe42046c08b28",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-01.jpg": {
+   "sourceSha": "da982f743098eb707bde3612c9246dd1d43d397a0305584c1bd5cf5e857a7608",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-02.jpg": {
+   "sourceSha": "202df21e3236da5715ee85e657bedd51db2d98827bd3f315045a5af278eaeca2",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-03.jpg": {
+   "sourceSha": "6010fdf19f99e98b50b74dcf78f0d3c5395bce3d02130e36bf4b438366f4a986",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-04.jpg": {
+   "sourceSha": "d0b81c84167e44da767f7e3386b72a7a13cc3c0479f37ce9d08baeca3cf1be83",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-05.jpg": {
+   "sourceSha": "77af8414ad24568e5d0d8c921262c5d0d018385d2dff5d968e5220751ac248e3",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-06.jpg": {
+   "sourceSha": "decfa7bdc3ae841d5fbb194705f433d2d0563dd8d60673c9f45a641cd2df5b22",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-07.jpg": {
+   "sourceSha": "5e3b7a130a0b4bd1413b1d040c0a13cc8b6517b4f921ceb2270da69319705084",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/exterior/exterior-08.jpg": {
+   "sourceSha": "5dcbf4bff10c9416a116b274d74da68d1c3a1aab4ad673262f653aa90471f14b",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-01.jpg": {
+   "sourceSha": "fff51412925c763a2019b118ef3fc3e497c87079d0e4337baae10702347f618f",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-02.jpg": {
+   "sourceSha": "bd349497f549f86d5e88ff3e8f64a118ad48232345cb4ba052a034830898b800",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-03.jpg": {
+   "sourceSha": "6b57f589bc0565313eecfdc201ed66844463d736ca1faf51c690bf41431bbdbe",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-04.jpg": {
+   "sourceSha": "96e1be770e58b8e8d9a11cdb325235dd591d02312fba82bbcbb61becab051378",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-05.jpg": {
+   "sourceSha": "bb947e4334d1ad855542744b2481958229ccc6b3adf15d6e4e3fe1adf906d003",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-06.jpg": {
+   "sourceSha": "3b22e1b94ec587cc3989582fe86a0ae70b1fda81d237ca37b8523a03105b5c80",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-07.jpg": {
+   "sourceSha": "00da4ef90d597b414ef89f6562007e73b3f47c005d6642dcba856f35a54b9cba",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/interior/interior-08.jpg": {
+   "sourceSha": "708c8746ed2a081a53ef7f3c9a39fba66024ac878aaf7e236dc73a048826b1e9",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-farmanieh/card.jpg": {
+   "sourceSha": "da982f743098eb707bde3612c9246dd1d43d397a0305584c1bd5cf5e857a7608",
+   "profile": "1400/80"
+  },
+  "public/projects/avaan-center/exterior/exterior-01.jpg": {
+   "sourceSha": "04d056263e3920ef10a314e9c44f0b16c978ca75896f9c596acbd48e21a79a1b",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-02.jpg": {
+   "sourceSha": "16b246f1e71e1ef7c794509b9c25be26e154518397f0944308664f862715de7f",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-03.jpg": {
+   "sourceSha": "4a7599d0778fe8566ea0d1fc5a6bc6ac5d7231062cc26b81e5dd5ecb563d9a09",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-04.jpg": {
+   "sourceSha": "0a69274fc634037b9682ac0d913d474e7756e10251ee0705e04c36db4c2efe4f",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-05.jpg": {
+   "sourceSha": "e68a60e0a2169f8bd561c30ed7c9284f53ec410d26370887bdc9fa4be106279f",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-06.jpg": {
+   "sourceSha": "6e757c68900c8f76dec1ca929529d251a539d548a042f975d91bc978d184d6d4",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/exterior/exterior-07.jpg": {
+   "sourceSha": "bea29c95b9de3397cf01a62ee53c88f4aa59b29aac66894a55095023bb329e15",
+   "profile": "2800/84"
+  },
+  "public/projects/avaan-center/interior/interior-01.jpg": {
+   "sourceSha": "f136b81a9524922c98858825bb049070a7dea49fb904554fc46354489271366e",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-02.jpg": {
+   "sourceSha": "9a478965fbd20b1164d7085726564b4f03de5d5ea885d2b66ff797bd77d8e30f",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-03.jpg": {
+   "sourceSha": "5d8d692b24e07bebce09fd56df94455cf5e8aadd9314cad67ae35bf9f2ac0ee7",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-04.jpg": {
+   "sourceSha": "8e270b1381f135e92f2abd6947cfb2fbfac0b7c408e02895a6239f8c0d57dee9",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-05.jpg": {
+   "sourceSha": "955fc6ae9f08eb4c1f31f7579b6154660b19e8db0e784cbe81c5d5941c16fa7d",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-06.jpg": {
+   "sourceSha": "c7fe402b993e18bbf95c13167fbcefa1c80b680469d630daf3762169ed1a0131",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/interior/interior-07.jpg": {
+   "sourceSha": "be5b805268d9db96cda2c9e8206e44fb89cf8f86c9534dd7d19305c0ff8574a5",
+   "profile": "2000/84"
+  },
+  "public/projects/avaan-center/card.jpg": {
+   "sourceSha": "04d056263e3920ef10a314e9c44f0b16c978ca75896f9c596acbd48e21a79a1b",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-center-shariati/exterior/exterior-01.jpg": {
+   "sourceSha": "e6561063c2a032f6b198ed99dc8eaa4fe33310a90a4a84e5113c3488a3772622",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-shariati/exterior/exterior-02.jpg": {
+   "sourceSha": "3a4b2cdb9dbccf836b1ee8205af4e27f26610c89dbfde821ac1db76f45273754",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-shariati/exterior/exterior-03.jpg": {
+   "sourceSha": "3095fd7a67639efc7f76f99e2becff4fd6c9232ecb4ab7bdbfeb820a908c9dd9",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-shariati/interior/interior-01.jpg": {
+   "sourceSha": "d4f17c4b8d2f826b238be7b6eb65754d10d784f6e87d03b75d8d353fe08748b7",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-shariati/interior/interior-02.jpg": {
+   "sourceSha": "7bb58428c1a92fc749456aaa3f0a3cbbe5252796b5ade13767132cac3fe48fee",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-shariati/interior/interior-03.jpg": {
+   "sourceSha": "dba378362269029f4b6d464148f73f4ec5a1c96dced814343f08bb01ce80d7e5",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-center-shariati/card.jpg": {
+   "sourceSha": "e6561063c2a032f6b198ed99dc8eaa4fe33310a90a4a84e5113c3488a3772622",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-center-yeganeh/exterior/exterior-01.jpg": {
+   "sourceSha": "b823f82809e154901ae0bafc30e6c696ceac8d4073bb04955a32b14e443e8179",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-yeganeh/exterior/exterior-02.jpg": {
+   "sourceSha": "8f1e21fe88963d79b8c90dc2d0eb90faee37f9c6b9f2d3683e018d80d708af77",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-yeganeh/exterior/exterior-03.jpg": {
+   "sourceSha": "b2d6573a5540f0ed4c59c88a116f074165d400ce267ae332fb25668c212a66ca",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-yeganeh/exterior/exterior-04.jpg": {
+   "sourceSha": "0778c261a490660c9b0767f8bc72c62c177cfdaaf07e44e28d96c8da2efa7910",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-yeganeh/exterior/exterior-05.jpg": {
+   "sourceSha": "f28a9f68bf059327433da96a9aa3525b1748771d36db36993e434b1f381977ce",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-yeganeh/exterior/exterior-06.jpg": {
+   "sourceSha": "34a8bcd9326b7efabf0eca41c4f5c0a91967b0afa3ce9cfdd8261a90d88e560d",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-yeganeh/exterior/exterior-07.jpg": {
+   "sourceSha": "9c83e5de40abf1d7ab95785b9e274522770814e3ea5284d6145211bf4aa84762",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-yeganeh/card.jpg": {
+   "sourceSha": "b823f82809e154901ae0bafc30e6c696ceac8d4073bb04955a32b14e443e8179",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-center-kamranieh/exterior/exterior-01.jpg": {
+   "sourceSha": "21a9dd754723059db0f8dbdd98dc1351a70e3be3e0fba8fae69e0d436428281e",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-kamranieh/exterior/exterior-02.jpg": {
+   "sourceSha": "101993f312735feb73b5c1fe442ff264059fd670db09061b1c8e2457bbb8aad7",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-kamranieh/exterior/exterior-03.jpg": {
+   "sourceSha": "b757e010987d5ee9e93d18f286285e350fbca712c63495eee62f5c140d570c97",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-kamranieh/exterior/exterior-04.jpg": {
+   "sourceSha": "27d5f3343f71bc96eafa74c28555fdfe5aa2a21a03329115fd38f76a70237473",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-kamranieh/exterior/exterior-05.jpg": {
+   "sourceSha": "7ef46c65a1516e7be9cbc173f85e1303f02fac10983b88cf088adcd3b1736de8",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-kamranieh/exterior/exterior-06.jpg": {
+   "sourceSha": "ae460a775a1e5fd93164a5b0ae62f97b85fbd4f51cad38de3c99fbf13400744d",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-kamranieh/exterior/exterior-07.jpg": {
+   "sourceSha": "038b3877df22f4b743051692db3032f21ef1149667757f3cc89648bc3132bebf",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-kamranieh/card.jpg": {
+   "sourceSha": "21a9dd754723059db0f8dbdd98dc1351a70e3be3e0fba8fae69e0d436428281e",
+   "profile": "1400/80"
+  },
+  "public/projects/niayesh-commercial-complex/exterior/exterior-01.jpg": {
+   "sourceSha": "63199092d90589e2e4a32e3706080076e1633ed92bce596b3157e4a084b08227",
+   "profile": "2800/84"
+  },
+  "public/projects/niayesh-commercial-complex/exterior/exterior-02.jpg": {
+   "sourceSha": "e2e28732b75deec67b3293a675c455e4af7d785b9584a6fe456d99cc1b31563e",
+   "profile": "2800/84"
+  },
+  "public/projects/niayesh-commercial-complex/exterior/exterior-03.jpg": {
+   "sourceSha": "3911a9677e7567d33c14776a32fa47d4d1a3c8cd3281fb0dc5526d4a271aa13f",
+   "profile": "2800/84"
+  },
+  "public/projects/niayesh-commercial-complex/exterior/exterior-04.jpg": {
+   "sourceSha": "ff34fe2742f35e62ac7022f4c548455c6432c4d7d6f267dab5b584a35d2860af",
+   "profile": "2800/84"
+  },
+  "public/projects/niayesh-commercial-complex/interior/interior-01.jpg": {
+   "sourceSha": "0d5e4b9f424e8dab03438bb51ba4e2f886ea240fcd9ee6c5899149494e748882",
+   "profile": "2000/84"
+  },
+  "public/projects/niayesh-commercial-complex/interior/interior-02.jpg": {
+   "sourceSha": "6d633adb492f4c645d7b82d587cb9e050c9cba2c5a3f2585dca184830e080831",
+   "profile": "2000/84"
+  },
+  "public/projects/niayesh-commercial-complex/interior/interior-03.jpg": {
+   "sourceSha": "2053fdc08de2c555e4053dc75b186e373e257983631dc19ad4f66412639a336c",
+   "profile": "2000/84"
+  },
+  "public/projects/niayesh-commercial-complex/interior/interior-04.jpg": {
+   "sourceSha": "79cbb1519e2ecc47b10e2e2f1d1f6b88d7b5527d25c0463dd496b44e4a54c5db",
+   "profile": "2000/84"
+  },
+  "public/projects/niayesh-commercial-complex/interior/interior-05.jpg": {
+   "sourceSha": "7d0fe3835d46e8dd7091fda9c0622ebb5c420ef3953da1d6d2fea14c5f447bb3",
+   "profile": "2000/84"
+  },
+  "public/projects/niayesh-commercial-complex/interior/interior-06.jpg": {
+   "sourceSha": "cc28e2ae832dcdcda8bbd2b70aa75590ae26a94dbf5d4187720d65754c0e16b1",
+   "profile": "2000/84"
+  },
+  "public/projects/niayesh-commercial-complex/interior/interior-07.jpg": {
+   "sourceSha": "56a2cf0fa58668aa9e90f656a975ae108a91e32db60cdc4b94cebb4cc2a6aca6",
+   "profile": "2000/84"
+  },
+  "public/projects/niayesh-commercial-complex/interior/interior-08.jpg": {
+   "sourceSha": "08900959758932239ec6641e80739eff8fe0ddbf265b975a1cce26b6d58980de",
+   "profile": "2000/84"
+  },
+  "public/projects/niayesh-commercial-complex/card.jpg": {
+   "sourceSha": "63199092d90589e2e4a32e3706080076e1633ed92bce596b3157e4a084b08227",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-equestrian-club/exterior/exterior-01.jpg": {
+   "sourceSha": "aee63f591fbee22e7629dd1f3a35f8cceda319fd486adeda1ce5d9ea9da13e6f",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-equestrian-club/exterior/exterior-02.jpg": {
+   "sourceSha": "387c34ecdc94582fe3910fee5d8857c846f231e0632c53a9af79d04a8fac80ea",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-equestrian-club/exterior/exterior-03.jpg": {
+   "sourceSha": "5620b83a6fea4c1b571d11f08df5a016f80e4ae12ecbf06c3c8815a1b172548b",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-equestrian-club/exterior/exterior-04.jpg": {
+   "sourceSha": "0595a64542b032e34fc83896839ceba25f974533191f661ed4fbd5cee25a970f",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-equestrian-club/exterior/exterior-05.jpg": {
+   "sourceSha": "ef34a0a44a43f8d6aaed471f5cb550493913c066007dfdbdd3ea56d4d4731b7e",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-equestrian-club/exterior/exterior-06.jpg": {
+   "sourceSha": "486dcca49f277f1fe3ed2081e4129f8909ed882fd5e1278ebdfe111161632d52",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-equestrian-club/exterior/exterior-07.jpg": {
+   "sourceSha": "a9e19649b8d06302202212e0b9a6ff54440c65019c697df809c78b9df9f11f83",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-equestrian-club/exterior/exterior-08.jpg": {
+   "sourceSha": "12be899c8ebf32416a1cb43a44ae3979d6fecd0866d3f11edcc75ebb30dff11d",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-equestrian-club/interior/interior-01.jpg": {
+   "sourceSha": "6f750c17b7b96faaaf72cc49c997dc4eef15d6925bc7b71fc6cfad341dc2d784",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-equestrian-club/interior/interior-02.jpg": {
+   "sourceSha": "96c4bb154833dbde25d3dc1c820d3197ae5a875bcd8ce15bb69a3b7b08b15604",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-equestrian-club/interior/interior-03.jpg": {
+   "sourceSha": "7c845101b2bfbf9d8e2bd0c4ff0b36b37cf56eb2ab5d639103fa0400a1f7bf09",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-equestrian-club/interior/interior-04.jpg": {
+   "sourceSha": "8d2f8e0f580efe3e51cfd4229d6e8f84e33db891c0d4b4a52e8cf82aef11e5c7",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-equestrian-club/interior/interior-05.jpg": {
+   "sourceSha": "adc931d0ef80d3a5c103cb2e3e3abc713a7d850662097d6c773d1cdc50174800",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-equestrian-club/interior/interior-06.jpg": {
+   "sourceSha": "2d50b7cbd38d49ee4cc28455876090570ba35c018406b4bc1bafff0e3ae1c0a2",
+   "profile": "2000/84"
+  },
+  "public/projects/bam-equestrian-club/card.jpg": {
+   "sourceSha": "aee63f591fbee22e7629dd1f3a35f8cceda319fd486adeda1ce5d9ea9da13e6f",
+   "profile": "1400/80"
+  },
+  "public/projects/bamland/exterior/exterior-01.jpg": {
+   "sourceSha": "c605df4bfb01d60ce4b64f2f3dd9ba5864dd8a055e1770cf933cd326b33b46ba",
+   "profile": "2800/84"
+  },
+  "public/projects/bamland/exterior/exterior-02.jpg": {
+   "sourceSha": "616e7e9a401d904f3b54e59c12ec2dba05d1d89b78e32767734070e36140812f",
+   "profile": "2800/84"
+  },
+  "public/projects/bamland/exterior/exterior-03.jpg": {
+   "sourceSha": "8328e88f69de5e2a15b4aca6d1b71b5b46e13b94c4c8edff1d73322ea2c8dcd7",
+   "profile": "2800/84"
+  },
+  "public/projects/bamland/exterior/exterior-04.jpg": {
+   "sourceSha": "1b338aa9a67e5f9ab139936e474139ccf72752768e3eaf0ce2246a9d14f1e74f",
+   "profile": "2800/84"
+  },
+  "public/projects/bamland/exterior/exterior-05.jpg": {
+   "sourceSha": "d83b3cbdd6d32280b6dab066a563b48a9f4a900e150818a49a96a9e6d9b86549",
+   "profile": "2800/84"
+  },
+  "public/projects/bamland/exterior/exterior-06.jpg": {
+   "sourceSha": "166403b4c6a5383698db0087c095f1f462eb6153fc186e9a0b96098967ac0adf",
+   "profile": "2800/84"
+  },
+  "public/projects/bamland/exterior/exterior-07.jpg": {
+   "sourceSha": "1860efb4bf2b9463ed04b98b9d1a5289b503a57fa3c5e0b1fcd5c68a533d583f",
+   "profile": "2800/84"
+  },
+  "public/projects/bamland/exterior/exterior-08.jpg": {
+   "sourceSha": "70f5718b00d220418325a051b1f51dbbe14073f97f499ff5b2c6521208e18b0f",
+   "profile": "2800/84"
+  },
+  "public/projects/bamland/exterior/exterior-09.jpg": {
+   "sourceSha": "959db136c57bd7c764646ebeaa5672367fc6e1ec4021cdeb13d42a234df2e4bf",
+   "profile": "2800/84"
+  },
+  "public/projects/bamland/interior/interior-01.jpg": {
+   "sourceSha": "73100e0284699455e2c4000b95ad91bf0620a653eb8c547771035fe9fd199dcd",
+   "profile": "2000/84"
+  },
+  "public/projects/bamland/interior/interior-02.jpg": {
+   "sourceSha": "54eabd0c4e9a98911e71601727f2a278f6ec6aa5509883451940798574451018",
+   "profile": "2000/84"
+  },
+  "public/projects/bamland/interior/interior-03.jpg": {
+   "sourceSha": "36c91681a9898716f7ee683d9f595e69e500fb26ad1e22c7064550b118cae4d3",
+   "profile": "2000/84"
+  },
+  "public/projects/bamland/interior/interior-04.jpg": {
+   "sourceSha": "fd1308eef42374cc275877dc0e3c2d1b289a2a512f8aa10a8943070aa3b31578",
+   "profile": "2000/84"
+  },
+  "public/projects/bamland/interior/interior-05.jpg": {
+   "sourceSha": "29cd98d60057bccb3b5e6636fd63296a9b9364a21761ea6da16e444b8ce834d1",
+   "profile": "2000/84"
+  },
+  "public/projects/bamland/interior/interior-06.jpg": {
+   "sourceSha": "7b2c54c47114bfefab9e17e9add706ac12ad5d6027ec94dc9da813e2af967f36",
+   "profile": "2000/84"
+  },
+  "public/projects/bamland/interior/interior-07.jpg": {
+   "sourceSha": "9bdd7c527157b79bd64ef3e506c2a7bbf656b8b4cfa0c4340d9c2e9f12e70465",
+   "profile": "2000/84"
+  },
+  "public/projects/bamland/interior/interior-08.jpg": {
+   "sourceSha": "1887a6470223217191b670a6c6d114ba3d5c2dc219b43c3d3a7f485b2e65aca0",
+   "profile": "2000/84"
+  },
+  "public/projects/bamland/card.jpg": {
+   "sourceSha": "c605df4bfb01d60ce4b64f2f3dd9ba5864dd8a055e1770cf933cd326b33b46ba",
+   "profile": "1400/80"
+  },
+  "public/projects/persian-gulf-artificial-lake/exterior/exterior-01.jpg": {
+   "sourceSha": "fb7dd2c01c40f6c3d3ae6e5d9a3f5548690032b9c5af634a8edb83cfbaa2a808",
+   "profile": "2800/84"
+  },
+  "public/projects/persian-gulf-artificial-lake/exterior/exterior-02.jpg": {
+   "sourceSha": "99a8ab5fd2ecf34975338bf70617825f8fd4a10f047a4a3cb0a41c58241d61ca",
+   "profile": "2800/84"
+  },
+  "public/projects/persian-gulf-artificial-lake/exterior/exterior-03.jpg": {
+   "sourceSha": "a59e68bb1ff3dd0f334c63ed06e8cb51c70b8a5b06fb8ef82be9356ac8c7cc72",
+   "profile": "2800/84"
+  },
+  "public/projects/persian-gulf-artificial-lake/exterior/exterior-04.jpg": {
+   "sourceSha": "299d7290dce1e6abc63c77448d634d6efda9afe31d0354a76c171509d6d3dced",
+   "profile": "2800/84"
+  },
+  "public/projects/persian-gulf-artificial-lake/exterior/exterior-05.jpg": {
+   "sourceSha": "5dcb1ab7e1c31a94bb91a344c96772881d2e72263689a0197d04964313b3ec88",
+   "profile": "2800/84"
+  },
+  "public/projects/persian-gulf-artificial-lake/exterior/exterior-06.jpg": {
+   "sourceSha": "35d3907fedea87766fc3cc7f3759131b8eaf4ee8d8b4b6309697419f67cda6eb",
+   "profile": "2800/84"
+  },
+  "public/projects/persian-gulf-artificial-lake/card.jpg": {
+   "sourceSha": "fb7dd2c01c40f6c3d3ae6e5d9a3f5548690032b9c5af634a8edb83cfbaa2a808",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-center-bokharest/exterior/exterior-01.jpg": {
+   "sourceSha": "4d1935adb43937816467bdcc20bf7bf0c028ed69a520a5b4a20c271dd7ae832f",
+   "profile": "2800/84/inset-0.088"
+  },
+  "public/projects/bam-center-bokharest/exterior/exterior-02.jpg": {
+   "sourceSha": "d229d71bcf5736c4471adcc29407d9c72bbb4ba07c379c9bee30b2bb7838f063",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-bokharest/exterior/exterior-03.jpg": {
+   "sourceSha": "1c104638929d624810c3d29a8b18b5f81b76a4aba5f289635883cb4b8bf35779",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-center-bokharest/card.jpg": {
+   "sourceSha": "4d1935adb43937816467bdcc20bf7bf0c028ed69a520a5b4a20c271dd7ae832f",
+   "profile": "1400/80/inset-0.088"
+  },
+  "public/projects/bam-center-vesali/exterior/exterior-01.jpg": {
+   "sourceSha": "eddb7e662c77a9f53403f54e492d0ae49a0a45cb56c6d5efc09c504580d7a361",
+   "profile": "2800/84/inset-0.06"
+  },
+  "public/projects/bam-center-vesali/exterior/exterior-02.jpg": {
+   "sourceSha": "f95511efab46d8e5149facf464337dcc297aa475b0488465f94dad53364946ea",
+   "profile": "2800/84/inset-0.075"
+  },
+  "public/projects/bam-center-vesali/exterior/exterior-03.jpg": {
+   "sourceSha": "7ccd3505caf6ea594f2f96f649b93ba558d73745aeb02f44e69739a93d72bbcd",
+   "profile": "2800/84/inset-0.065"
+  },
+  "public/projects/bam-center-vesali/card.jpg": {
+   "sourceSha": "eddb7e662c77a9f53403f54e492d0ae49a0a45cb56c6d5efc09c504580d7a361",
+   "profile": "1400/80/inset-0.06"
+  },
+  "public/projects/bam-address-shiraz/exterior/exterior-01.jpg": {
+   "sourceSha": "42f0b2bf681f528685719284b5af53c8b89f873eabc18b2ad25502568567434c",
+   "profile": "2800/84/inset-0.035"
+  },
+  "public/projects/bam-address-shiraz/exterior/exterior-02.jpg": {
+   "sourceSha": "28ea38fc8e59522d4320c7bd0b24886922fff0955737ac30aa5229c04c1b6950",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-shiraz/exterior/exterior-03.jpg": {
+   "sourceSha": "800c2fb34ffd06edf498dd9db8c8ba47c853a337ce1a92e87837ff3d10270141",
+   "profile": "2800/84"
+  },
+  "public/projects/bam-address-shiraz/card.jpg": {
+   "sourceSha": "42f0b2bf681f528685719284b5af53c8b89f873eabc18b2ad25502568567434c",
+   "profile": "1400/80/inset-0.035"
+  },
+  "public/projects/boostan-hashtgerd-1002-unit-project/exterior/exterior-01.jpg": {
+   "sourceSha": "cc1b024be3993bf80a82b9c013ecf777d852c54f37575e04bcd75cddc82c367c",
+   "profile": "2800/84"
+  },
+  "public/projects/boostan-hashtgerd-1002-unit-project/exterior/exterior-02.jpg": {
+   "sourceSha": "2cf3bb41773569aa4d70ec529881aa7523bade6d82d3acf5d5a3baba5f5b600d",
+   "profile": "2800/84"
+  },
+  "public/projects/boostan-hashtgerd-1002-unit-project/exterior/exterior-03.jpg": {
+   "sourceSha": "ca556905a0bdd966283561e747049bb4646fd5c5ee6fe46a10cf67eb2dc57451",
+   "profile": "2800/84"
+  },
+  "public/projects/boostan-hashtgerd-1002-unit-project/exterior/exterior-04.jpg": {
+   "sourceSha": "907d06b27097de899dcf1bdc8050e61aac1f69e2c271880c793b04787f9c48a7",
+   "profile": "2800/84"
+  },
+  "public/projects/boostan-hashtgerd-1002-unit-project/exterior/exterior-05.jpg": {
+   "sourceSha": "9dbcbda9c73f2aad2d7057812b6bac741a825f60a7993eaf672152e209a74813",
+   "profile": "2800/84"
+  },
+  "public/projects/boostan-hashtgerd-1002-unit-project/exterior/exterior-06.jpg": {
+   "sourceSha": "0c025d52eb004dd32a97a138d679c56836b3712bf4be4f7ec205a06bb97a03e5",
+   "profile": "2800/84"
+  },
+  "public/projects/boostan-hashtgerd-1002-unit-project/card.jpg": {
+   "sourceSha": "cc1b024be3993bf80a82b9c013ecf777d852c54f37575e04bcd75cddc82c367c",
+   "profile": "1400/80"
+  },
+  "public/projects/iran-khodro-project/exterior/exterior-01.jpg": {
+   "sourceSha": "4a0a34aadfaa96c999b675f99df6d1d4084ffdd83bbce41b81f0b2b2688a7bd9",
+   "profile": "2800/84"
+  },
+  "public/projects/iran-khodro-project/exterior/exterior-02.jpg": {
+   "sourceSha": "6b477baa2d913bf034d609d423207a20045a243dba7851014a1cd3cda3a1cbe4",
+   "profile": "2800/84"
+  },
+  "public/projects/iran-khodro-project/exterior/exterior-03.jpg": {
+   "sourceSha": "5767a3c959a346d3735c57d5c48a8fa79f5fbdc4b94e251bae93fd149e57c12f",
+   "profile": "2800/84"
+  },
+  "public/projects/iran-khodro-project/exterior/exterior-04.jpg": {
+   "sourceSha": "0372c17a52a5047f4e79f62e58a9551d7a7372cb30849280d9c0dbd8248b9bd5",
+   "profile": "2800/84"
+  },
+  "public/projects/iran-khodro-project/exterior/exterior-05.jpg": {
+   "sourceSha": "c28faade6b3c37a8e6559d82b532220b8ca5cba5d912647e25972145e9d7a901",
+   "profile": "2800/84"
+  },
+  "public/projects/iran-khodro-project/exterior/exterior-06.jpg": {
+   "sourceSha": "cef303facb33d7dd0d5753743ff1167eaba0bfab06b3c8c63269af8d617682c2",
+   "profile": "2800/84"
+  },
+  "public/projects/iran-khodro-project/card.jpg": {
+   "sourceSha": "4a0a34aadfaa96c999b675f99df6d1d4084ffdd83bbce41b81f0b2b2688a7bd9",
+   "profile": "1400/80"
+  },
+  "public/projects/boostan-asaluyeh/exterior/exterior-01.jpg": {
+   "sourceSha": "d16931d0d37a2d5130d064fcdde92153805fd6a365e685030f7ab4cc765e6cf6",
+   "profile": "2800/84"
+  },
+  "public/projects/boostan-asaluyeh/exterior/exterior-02.jpg": {
+   "sourceSha": "ef3724b2a6c60bb5dc7ddad71c3b50492429e25b21bc084ee15cf9dbb5a691ee",
+   "profile": "2800/84"
+  },
+  "public/projects/boostan-asaluyeh/exterior/exterior-03.jpg": {
+   "sourceSha": "a706ebd77c6bb15d7c8923bd8f17e61e62ff9b8bde6f70510f1af4111f9671c2",
+   "profile": "2800/84"
+  },
+  "public/projects/boostan-asaluyeh/card.jpg": {
+   "sourceSha": "d16931d0d37a2d5130d064fcdde92153805fd6a365e685030f7ab4cc765e6cf6",
+   "profile": "1400/80"
+  },
+  "public/projects/golestan-meshgin-shahr/exterior/exterior-01.jpg": {
+   "sourceSha": "1021568a6ca125a47a5458ee2ed0d8852a6332ff23d771fe3e448b5a63b8de19",
+   "profile": "2800/84"
+  },
+  "public/projects/golestan-meshgin-shahr/exterior/exterior-02.jpg": {
+   "sourceSha": "74d5df948281bde0cadf72cf8e3e2f8096c67c592674148c5027e805ee8e71b5",
+   "profile": "2800/84"
+  },
+  "public/projects/golestan-meshgin-shahr/exterior/exterior-03.jpg": {
+   "sourceSha": "17e055c2e278802185d9623ff4148f593f6b4ea1c85b355ede2ff88f5dd17b54",
+   "profile": "2800/84"
+  },
+  "public/projects/golestan-meshgin-shahr/card.jpg": {
+   "sourceSha": "1021568a6ca125a47a5458ee2ed0d8852a6332ff23d771fe3e448b5a63b8de19",
+   "profile": "1400/80"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-01.jpg": {
+   "sourceSha": "8329644eca4520fc52f44112e99916b0e9d09a43f4f1097254c9aa06c4865863",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-02.jpg": {
+   "sourceSha": "9f37bda5ad9a8813028598ede2216d897ba2d313acfe77073bcfb1a2d0de041c",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-03.jpg": {
+   "sourceSha": "f8c5e0fabf886e159879623fccd2dc2e11de717bcf98df58ae9bae7b00bf6a7a",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-04.jpg": {
+   "sourceSha": "cedd5fdc06dfe0d13d4b830cda20c28b71311a093c119b8e9657931550fea00e",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-05.jpg": {
+   "sourceSha": "56687f4eee110862ae9ecfa774810e19a8e8fc505b01e273a4e300c9fac2c9aa",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-06.jpg": {
+   "sourceSha": "f90f869efd649b0ad66814aa997100137c12e6e050e148179d285188bf69fb5c",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-07.jpg": {
+   "sourceSha": "b5c9b5f2c767c4894ac0b9af548370f4c94ae044197d7eedf2784ab8af2746d4",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/exterior/exterior-08.jpg": {
+   "sourceSha": "7db0ba390407ebdb42b047401319d3ee90b8da45f9bab7a7987d0a5a8d2fa980",
+   "profile": "2800/84/inset-0.04"
+  },
+  "public/projects/bam-land-shiraz-township/card.jpg": {
+   "sourceSha": "8329644eca4520fc52f44112e99916b0e9d09a43f4f1097254c9aa06c4865863",
+   "profile": "1400/80/inset-0.04"
+  },
+  "public/projects/nikan-hospital/exterior/exterior-01.jpg": {
+   "sourceSha": "a34ebec7343a171bd15af3dfccae3c6f971a2108c1ed16a21a83d27e9feea720",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-hospital/exterior/exterior-02.jpg": {
+   "sourceSha": "4e1f449c968126eea919299c283ae59cb165d277ac72755346fe7be929054496",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-hospital/exterior/exterior-03.jpg": {
+   "sourceSha": "4da46afbc436da1fc8324f0e5f2bb68c48ac1b9439637b1bf4eeba3bf4298b2f",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-hospital/card.jpg": {
+   "sourceSha": "a34ebec7343a171bd15af3dfccae3c6f971a2108c1ed16a21a83d27e9feea720",
+   "profile": "1400/80"
+  },
+  "public/projects/erfan-clinic/exterior/exterior-01.jpg": {
+   "sourceSha": "256c51695a2612b644a0028702234c055ae21d334201f6567654fe870495373b",
+   "profile": "2800/84/inset-0.07"
+  },
+  "public/projects/erfan-clinic/exterior/exterior-02.jpg": {
+   "sourceSha": "ae022d3f948a8f1545e65d2b4b2f517d3e848650e61197f6beb177857c360437",
+   "profile": "2800/84/inset-0.07"
+  },
+  "public/projects/erfan-clinic/card.jpg": {
+   "sourceSha": "256c51695a2612b644a0028702234c055ae21d334201f6567654fe870495373b",
+   "profile": "1400/80/inset-0.07"
+  },
+  "public/projects/national-cancer-center/exterior/exterior-01.jpg": {
+   "sourceSha": "d3ee5345d59145a5b8bdc4b52a23463cbb99da77328f8e9c9207f5e5025d363e",
+   "profile": "2800/84"
+  },
+  "public/projects/national-cancer-center/card.jpg": {
+   "sourceSha": "d3ee5345d59145a5b8bdc4b52a23463cbb99da77328f8e9c9207f5e5025d363e",
+   "profile": "1400/80"
+  },
+  "public/projects/nikan-west-hospital/exterior/exterior-01.jpg": {
+   "sourceSha": "935c6c5a5c5f522a5d3581a2d40430ee8f97fe56d1647d70e757355d0055d61d",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-west-hospital/card.jpg": {
+   "sourceSha": "935c6c5a5c5f522a5d3581a2d40430ee8f97fe56d1647d70e757355d0055d61d",
+   "profile": "1400/80"
+  },
+  "public/projects/sepid-hospital/exterior/exterior-01.jpg": {
+   "sourceSha": "fb8fde56ef1880488a382f356e8d91e7ce8e06d7a0d789532792943a11ab83b1",
+   "profile": "2800/84"
+  },
+  "public/projects/sepid-hospital/card.jpg": {
+   "sourceSha": "fb8fde56ef1880488a382f356e8d91e7ce8e06d7a0d789532792943a11ab83b1",
+   "profile": "1400/80"
+  },
+  "public/projects/district-14-specialized-clinic/exterior/exterior-01.jpg": {
+   "sourceSha": "8320aa43bd14d3debe87148dd539b652309b8d4e732608780a263b328d781d98",
+   "profile": "2800/84/inset-0.035"
+  },
+  "public/projects/district-14-specialized-clinic/exterior/exterior-02.jpg": {
+   "sourceSha": "59cc5c3c0703eaa4cec51a9a58287104e1c735e23f499f7ea1311de9487081a7",
+   "profile": "2800/84"
+  },
+  "public/projects/district-14-specialized-clinic/exterior/exterior-03.jpg": {
+   "sourceSha": "f1efa046caa2e6eee4c089ddba09046524f9f575d3eb733c7dd51f0fea77af1b",
+   "profile": "2800/84"
+  },
+  "public/projects/district-14-specialized-clinic/interior/interior-01.jpg": {
+   "sourceSha": "eba722aa9b1e4fe4cbcfa0214c9f2dccf9ebd01596fffc13d8ee6fb11d9fbb44",
+   "profile": "2000/84"
+  },
+  "public/projects/district-14-specialized-clinic/interior/interior-02.jpg": {
+   "sourceSha": "22e5541db8de9d5895f949eec586ccb3f96be6688b28dbe3d8a1e8480e2497df",
+   "profile": "2000/84"
+  },
+  "public/projects/district-14-specialized-clinic/card.jpg": {
+   "sourceSha": "8320aa43bd14d3debe87148dd539b652309b8d4e732608780a263b328d781d98",
+   "profile": "1400/80/inset-0.035"
+  },
+  "public/projects/tehrani-clinic/exterior/exterior-01.jpg": {
+   "sourceSha": "f00ae8825737e4f9d3bea8dc140a640866335dba1d05e948d0a3cf82530bed3e",
+   "profile": "2800/84"
+  },
+  "public/projects/tehrani-clinic/exterior/exterior-02.jpg": {
+   "sourceSha": "5bac8ee48e12ec6c77294d35b1d47394b11cd6d8049c17b8f6deb49064c19278",
+   "profile": "2800/84"
+  },
+  "public/projects/tehrani-clinic/exterior/exterior-03.jpg": {
+   "sourceSha": "b1c4ecd9f98b41f97a5a27a21488ae789a9d6400d605855b61f2cef6f3f9d60e",
+   "profile": "2800/84"
+  },
+  "public/projects/tehrani-clinic/exterior/exterior-04.jpg": {
+   "sourceSha": "fabba01164e2693c8a9ee2c555f014a499cc97e04f8a02227a343359a49d3f24",
+   "profile": "2800/84"
+  },
+  "public/projects/tehrani-clinic/card.jpg": {
+   "sourceSha": "f00ae8825737e4f9d3bea8dc140a640866335dba1d05e948d0a3cf82530bed3e",
+   "profile": "1400/80"
+  },
+  "public/projects/nikan-clinic/exterior/exterior-01.jpg": {
+   "sourceSha": "16431da04cc6aa591ea97615e02b1f0b93309b301d4003c42d2f68e2e4bf3306",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-clinic/exterior/exterior-02.jpg": {
+   "sourceSha": "d4925bd47b7674f8d88e643f0a21f8a54db64893078c1d1bd619b8c8731a5eaa",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-clinic/exterior/exterior-03.jpg": {
+   "sourceSha": "69aee354e64babfd91231e8facd0cc5b08a137472be5adb88af179434a6c0a3b",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-clinic/exterior/exterior-04.jpg": {
+   "sourceSha": "b8e5350a704acb0f592c2a619197d194f1f0a22381718c3151bc142021e271bc",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-01.jpg": {
+   "sourceSha": "ffe40323c33caa14ce272e3242c8c3aa415b68a1b9ef69f2f04827e8abd4f3dd",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-02.jpg": {
+   "sourceSha": "19d776df1502dea0081f781088b331904d1f0c7d22138c76b2f518917046cb3c",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-03.jpg": {
+   "sourceSha": "6885c43908ce15651a587c5e3df463a9443a2bb4cc46882ba02e1bd331a6d156",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-04.jpg": {
+   "sourceSha": "e252402a5893c4db39611a65deb4a4f55de8e8b1bc6a8222fb19ef540bce3863",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-05.jpg": {
+   "sourceSha": "e2dab2a4d52551159d95012703892da5aa0bb5a68831ba85d91319a4821024c4",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-06.jpg": {
+   "sourceSha": "c3b53308695238d0289247976fcdecb1a2baec6dd75e6cb5eacbd4aa0b40cd55",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-07.jpg": {
+   "sourceSha": "3e4fe751c6188bf6eaadbb19311e2244e73f905263f5a9aa8593118763197c44",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/interior/interior-08.jpg": {
+   "sourceSha": "27c627c66daa1753ae6a8f10aa9a00b1e098841a7c6820f27a58b5bc46be71ed",
+   "profile": "2000/84"
+  },
+  "public/projects/nikan-clinic/card.jpg": {
+   "sourceSha": "16431da04cc6aa591ea97615e02b1f0b93309b301d4003c42d2f68e2e4bf3306",
+   "profile": "1400/80"
+  },
+  "public/projects/nikan-negin-hospital/exterior/exterior-01.jpg": {
+   "sourceSha": "0a8c325822b9a1dc1ebc0d4d85492865a1d8cb5c37506406d633c722e7aae0a4",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-negin-hospital/exterior/exterior-02.jpg": {
+   "sourceSha": "5af124e6f7c9d5797bf1bc44a81eb82eb2a0b20febbbe5569db046ebbbbf6a2b",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-negin-hospital/card.jpg": {
+   "sourceSha": "0a8c325822b9a1dc1ebc0d4d85492865a1d8cb5c37506406d633c722e7aae0a4",
+   "profile": "1400/80"
+  },
+  "public/projects/nikan-hospital-expansion/exterior/exterior-01.jpg": {
+   "sourceSha": "09e17e86d4eb31ccc80e55b193c05e42ead5840ea0d2b191fa38ea23ea2ad5ac",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-hospital-expansion/exterior/exterior-02.jpg": {
+   "sourceSha": "d94c4dc2405e038d9c3944c02615be8d02733579582e1aff34af50993a8b3e86",
+   "profile": "2800/84"
+  },
+  "public/projects/nikan-hospital-expansion/card.jpg": {
+   "sourceSha": "09e17e86d4eb31ccc80e55b193c05e42ead5840ea0d2b191fa38ea23ea2ad5ac",
+   "profile": "1400/80"
+  },
+  "public/projects/311/exterior/exterior-01.jpg": {
+   "sourceSha": "c048767b2fd84c07a3ddcff953fbd3b543ae06868bac000a8406c384b2cf795d",
+   "profile": "2800/84"
+  },
+  "public/projects/311/exterior/exterior-02.jpg": {
+   "sourceSha": "5dab4510ca2a824511021b234e8c9f35c223c262c98f66c5782d56ab0c45f8b4",
+   "profile": "2800/84"
+  },
+  "public/projects/311/exterior/exterior-03.jpg": {
+   "sourceSha": "8908fe88835da06d032b990230df585a7e46c1fcb98aa53c6f6ddf1a89df781d",
+   "profile": "2800/84"
+  },
+  "public/projects/311/exterior/exterior-04.jpg": {
+   "sourceSha": "1dcb380bf5700c891cf2ff70b0743c6254cbcc9c988f1245298fd0ce721d7388",
+   "profile": "2800/84"
+  },
+  "public/projects/311/exterior/exterior-05.jpg": {
+   "sourceSha": "36533f501cfe050ae119b809558a6f8109fb2328cd821a1d395d833f26de3283",
+   "profile": "2800/84"
+  },
+  "public/projects/311/exterior/exterior-06.jpg": {
+   "sourceSha": "c4ee5a9cd056b610227b66c3a101303cdf04281d496b04191bf02bc7b7a65104",
+   "profile": "2800/84"
+  },
+  "public/projects/311/exterior/exterior-07.jpg": {
+   "sourceSha": "4370b4c8f5a934287c788d38a2e1f6029821ee8a4a45058eaa2a4d034a1ce3c5",
+   "profile": "2800/84"
+  },
+  "public/projects/311/exterior/exterior-08.jpg": {
+   "sourceSha": "2637e1b7e87794cd5191ab01fc25f9f51fbc25a86f5460878881e793ef734f61",
+   "profile": "2800/84"
+  },
+  "public/projects/311/interior/interior-01.jpg": {
+   "sourceSha": "d954e9ee5dff1a9108009e9d5ebccece746d7330a60d6e4a5ba3b427de096866",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-02.jpg": {
+   "sourceSha": "e7aa793fb6a05d2b29fcefc56c9528d353201f649e057cb7a44fcdc46592f77b",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-03.jpg": {
+   "sourceSha": "f295e602a7a4aa4e6bf74c8134a1183b95a122e9fa48c1e3a832deb54b241b3d",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-04.jpg": {
+   "sourceSha": "55e0e10cde62315f960383295e5165f93923b1c1ef3df0e7110478278990c0c6",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-05.jpg": {
+   "sourceSha": "d58515505fa91d14762cb977541b56ead86133dc1458ca1ec2808da368b883cf",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-06.jpg": {
+   "sourceSha": "6689b3ca22577fa7849d64bc7a55264a4942e66a97a2fbc0709b65237534fb29",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-07.jpg": {
+   "sourceSha": "5690282679c1824846d5379234b0e5e08d6c5742aacbeed9d8c7493ae01ddcbf",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-08.jpg": {
+   "sourceSha": "d5fbd2f949d20928c0a2bd11690ea2314ba945f7786bc082f6b09e36e2a60295",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-09.jpg": {
+   "sourceSha": "4ac4ecf4b502f98ebe55b4151f9c954e37efb23639b1aa4014f0b1fc0c186f76",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-10.jpg": {
+   "sourceSha": "e58df77ae673ccd5b138585efa46c13705aaab5df496158b3e850bec4a98d42b",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-11.jpg": {
+   "sourceSha": "3e1c76e63be238895f3bcd44d44261497a0c336b5865539aedf7a2ba682d272f",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-12.jpg": {
+   "sourceSha": "6e3d4ef6a3d3fff26f73241db6c452ffa96d99ddb5b92c2206080335b46f67b9",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-13.jpg": {
+   "sourceSha": "2f63987ab554b57542e3940315e0d02d5673bf899d9a71f770e3f9df0398b362",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-14.jpg": {
+   "sourceSha": "b6fe7d980781bcdc7360ad525e419863639d7b087ea93763d1e7e540e0fd0694",
+   "profile": "2000/84"
+  },
+  "public/projects/311/interior/interior-15.jpg": {
+   "sourceSha": "bfdd82b63eaf5896803a596294221c6620f4043327bc45fe31bf67d18960d248",
+   "profile": "2000/84"
+  },
+  "public/projects/311/card.jpg": {
+   "sourceSha": "c048767b2fd84c07a3ddcff953fbd3b543ae06868bac000a8406c384b2cf795d",
+   "profile": "1400/80"
+  },
+  "public/projects/b77/exterior/exterior-01.jpg": {
+   "sourceSha": "32331b942a0efe98c17483e575b867598a04a3f348a04c79ef06393f48d97b31",
+   "profile": "2800/84"
+  },
+  "public/projects/b77/exterior/exterior-02.jpg": {
+   "sourceSha": "b00d211690ab576f89a8628a608439a3e77d92630edf6093ac22bb28dad574b7",
+   "profile": "2800/84"
+  },
+  "public/projects/b77/exterior/exterior-03.jpg": {
+   "sourceSha": "09af445cf8d5400729d6da08fced71e3c4bf096e1153468ee27e77836063b499",
+   "profile": "2800/84"
+  },
+  "public/projects/b77/exterior/exterior-04.jpg": {
+   "sourceSha": "f3d6c756e54d2ed265ab5a9eedcc65ff1d0119ca0e7ae3a35af25408a7bc1a32",
+   "profile": "2800/84"
+  },
+  "public/projects/b77/exterior/exterior-05.jpg": {
+   "sourceSha": "f578a21cd8bdc4b1ecf7bfce41b2d03a15c0a5e4c91ae9018e2b56b29cdf4f79",
+   "profile": "2800/84"
+  },
+  "public/projects/b77/exterior/exterior-06.jpg": {
+   "sourceSha": "ed6ec555372eb6ae06a6a496cc0bb71387807b17d6d4f2379f8132c3c3e7ec7f",
+   "profile": "2800/84"
+  },
+  "public/projects/b77/exterior/exterior-07.jpg": {
+   "sourceSha": "3dc8849bb997f4907f3000171b5e196073381b6c659383d563e0235fcfed1e5c",
+   "profile": "2800/84"
+  },
+  "public/projects/b77/exterior/exterior-08.jpg": {
+   "sourceSha": "27e294d6aa61a261e6e2564f423eb3c516ea2b5a477b88af87d3e9109f2d415d",
+   "profile": "2800/84"
+  },
+  "public/projects/b77/interior/interior-01.jpg": {
+   "sourceSha": "1dd8bbe0f79e6c6159204894dcbcac711eaac9efcbecee7054456ddcef42667c",
+   "profile": "2000/84"
+  },
+  "public/projects/b77/interior/interior-02.jpg": {
+   "sourceSha": "944958f735735e1ada3640bd44510a9a49e41afd03d84dcebb2436d6a55d54cf",
+   "profile": "2000/84"
+  },
+  "public/projects/b77/interior/interior-03.jpg": {
+   "sourceSha": "98677362ca2bd5b554eee158ba7051d671471b966a388a3d646f2f4c2a33c6a9",
+   "profile": "2000/84"
+  },
+  "public/projects/b77/interior/interior-04.jpg": {
+   "sourceSha": "b635a2230edec064c07cdc3b1173790c4caac1f03d38920d56172119961f7eb2",
+   "profile": "2000/84"
+  },
+  "public/projects/b77/interior/interior-05.jpg": {
+   "sourceSha": "03232f34e07d8bdfc574707e9db25a0f1e00f198b94031faab9122c8da3e6d6f",
+   "profile": "2000/84"
+  },
+  "public/projects/b77/interior/interior-06.jpg": {
+   "sourceSha": "6562b8ec6b00810d850707662b95ab608898dee58cfb9fc69ce06f09f845fb3f",
+   "profile": "2000/84"
+  },
+  "public/projects/b77/interior/interior-07.jpg": {
+   "sourceSha": "b1a3a167b0e6f74310bbb2e9681a2d1f65dd11a6e43b9a05cbaa0aab6654663b",
+   "profile": "2000/84"
+  },
+  "public/projects/b77/interior/interior-08.jpg": {
+   "sourceSha": "deba90bf6a0fcedfd61d0d870b433129d344d14852ed705eb42b4eb908373fe7",
+   "profile": "2000/84"
+  },
+  "public/projects/b77/interior/interior-09.jpg": {
+   "sourceSha": "3952348dae832e09ea511e88ee02ca8ad1c8efc9aa1041e9c6eba2228abd4391",
+   "profile": "2000/84"
+  },
+  "public/projects/b77/interior/interior-10.jpg": {
+   "sourceSha": "ce0cd22d28019883273194ad7d93aa49a8860d265f64097ed014fd4a28e5db4c",
+   "profile": "2000/84"
+  },
+  "public/projects/b77/interior/interior-11.jpg": {
+   "sourceSha": "0f512d32a1b1664ad335a88ea1d21c1201535278197160989c162c78a6157a6a",
+   "profile": "2000/84"
+  },
+  "public/projects/b77/card.jpg": {
+   "sourceSha": "32331b942a0efe98c17483e575b867598a04a3f348a04c79ef06393f48d97b31",
+   "profile": "1400/80"
+  },
+  "public/projects/x11/exterior/exterior-01.jpg": {
+   "sourceSha": "dd773a8a3d68d090cfa4ea5ba139604dad572ea88421da4afcdcfce4d91c3dbc",
+   "profile": "2800/84"
+  },
+  "public/projects/x11/exterior/exterior-02.jpg": {
+   "sourceSha": "bf874525a332bb472bd8e6be349e054ffc4b44be99045f2b352950de4f3513c3",
+   "profile": "2800/84"
+  },
+  "public/projects/x11/exterior/exterior-03.jpg": {
+   "sourceSha": "13b6564f829e565b92eb9500aaeb6fa670561e3359fa117aac566f3547673c42",
+   "profile": "2800/84"
+  },
+  "public/projects/x11/exterior/exterior-04.jpg": {
+   "sourceSha": "d1fdb590de4678994b7fc20af70fe29bff43d3f68c96dfb732ede02ec9e78094",
+   "profile": "2800/84"
+  },
+  "public/projects/x11/exterior/exterior-05.jpg": {
+   "sourceSha": "265293296d5c7381f414ebc35ab86c18d5e6d8a4057187757ccff06978d3a707",
+   "profile": "2800/84"
+  },
+  "public/projects/x11/card.jpg": {
+   "sourceSha": "dd773a8a3d68d090cfa4ea5ba139604dad572ea88421da4afcdcfce4d91c3dbc",
+   "profile": "1400/80"
+  },
+  "public/projects/tajik-mall/exterior/exterior-01.jpg": {
+   "sourceSha": "7059fa07cc975f10f934b9ddd3d1c3f3f935449e92f2f7a77467bf136d686121",
+   "profile": "2800/84"
+  },
+  "public/projects/tajik-mall/exterior/exterior-02.jpg": {
+   "sourceSha": "1b4ab67b4e1dde0c2297c3ee3202190c5c57823d2de9c80a0acc7c3a8027c5cb",
+   "profile": "2800/84"
+  },
+  "public/projects/tajik-mall/exterior/exterior-03.jpg": {
+   "sourceSha": "96b44fd9dc35d1245cd91aec7d6700c24699a07c59796fe0d00d66db22fc43c8",
+   "profile": "2800/84"
+  },
+  "public/projects/tajik-mall/exterior/exterior-04.jpg": {
+   "sourceSha": "d72db1625eaaf15a6471741ebca53d81c9346dff1650b8d48813f5f69fcb7d60",
+   "profile": "2800/84"
+  },
+  "public/projects/tajik-mall/exterior/exterior-05.jpg": {
+   "sourceSha": "b16a2aa3e780ba137c1e7cead1a22063616fae7a9b5f8c0be252ccfcd3588a8c",
+   "profile": "2800/84"
+  },
+  "public/projects/tajik-mall/exterior/exterior-06.jpg": {
+   "sourceSha": "76f490bf0be25cb1874f3c010f96321b3d2331a4aeddb7d84e64228810c7bf50",
+   "profile": "2800/84"
+  },
+  "public/projects/tajik-mall/exterior/exterior-07.jpg": {
+   "sourceSha": "2b5e8e29a8916006adb524bb949472d58e1d081bda8798138f4b010402f2ce28",
+   "profile": "2800/84"
+  },
+  "public/projects/tajik-mall/card.jpg": {
+   "sourceSha": "7059fa07cc975f10f934b9ddd3d1c3f3f935449e92f2f7a77467bf136d686121",
+   "profile": "1400/80"
+  }
+ }
+}

@@ -1,0 +1,116 @@
+# BAM Iran — corporate website and Project Atlas
+
+The corporate website of BAM Engineering Development Group (English, Persian and Arabic; light and dark themes), built around the BAM Project Atlas architectural archive.
+
+| Route | Page |
+|---|---|
+| `/` | Homepage: hero, Selected Projects, before/after, About, Leading Architects, Events, Journal |
+| `/projects`, `/projects/<slug>` | The architectural archive (Visual and Index views) and project pages |
+| `/architects`, `/events`, `/journal`, `/about`, `/contact` | Section pages |
+| `/admin` | Admin UI prototype. Development only; saves nothing |
+
+See `BAM_REDESIGN_CHANGELOG.md`, `CONTENT_INVENTORY.md`, `DESIGN_SYSTEM.md`, `CMS_INTEGRATION_NOTES.md` and `QA_REPORT.md`.
+
+## Run in VS Code
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Main files to edit
+
+- `data/projects.ts` — project names, categories and the data model.
+- `data/projectContent.ts` — verified facts and descriptions. `PROJECT_RESEARCH_REPORT.md` records the source of each.
+- `data/projectLocations.ts` — the approved addresses and Google Maps links.
+- `lib/i18n.ts` — every interface string, in English, Persian and Arabic.
+- `data/company.ts` — the official company text and contact details (verbatim from bamgroup.ir).
+- `data/architects.ts` — architects and their verified project credits.
+- `data/events.ts` — events (empty until real ones are supplied; samples live in `data/demo/`).
+- `data/journal.ts` — BAM Journal articles.
+- `data/home.ts` — homepage curation: hero slides, Selected Projects order, About image.
+- `scripts/image-import.decisions.json` — which photographs each project shows, and in what order.
+- `app/globals.css` — design tokens (palette, themes, type, layout) and the archive styles; `app/styles/` holds the site, homepage and inner-page styles.
+
+## Adding project content
+
+Add verified content to `data/projectContent.ts`, keyed by project code, and record its source in `PROJECT_RESEARCH_REPORT.md`. Anything left out is hidden on the page, so never fill a gap with a guess.
+
+```ts
+export const projectContent: Record<string, ProjectContent> = {
+  R01: {
+    description: { en: "…", fa: "…" },
+    location: {
+      country: { en: "…", fa: "…" },
+      city: { en: "…", fa: "…" },
+      district: { en: "…", fa: "…" },
+    },
+    facts: {
+      completionYear: { en: "…", fa: "…" },
+      siteArea: 0, // m²
+      floors: 0,
+      architect: { en: "…", fa: "…" },
+    },
+  },
+};
+```
+
+`ProjectFacts` in the same file lists every supported field. Numbers are formatted for each language automatically. Text that exists in only one language is hidden in the other: the site never shows English in Persian mode or Persian in English mode.
+
+## Images
+
+Project photography is copied from the image archive by a script. Do not edit the output by hand.
+
+```bash
+npm run import:images               # Import using the saved decisions
+npm run import:images -- --dry-run  # Show the outcome without writing anything
+npm run import:images -- --sheets   # Make contact sheets of images not yet reviewed
+```
+
+The source defaults to `D:\Design\Media\iran picture Docs`. Set `BAM_IMAGE_SOURCE` to use another folder. The source is only ever read.
+
+Folders that are not in that archive go in `source-images/`, which is read the same way and is gitignored. Never place originals in `public/`: everything there is published.
+
+The import writes `public/projects/<project-slug>/`, `data/projectImages.generated.ts` and `IMAGE_IMPORT_REPORT.md`. It is safe to rerun: unchanged images are skipped, and only files the script made itself are ever replaced or removed.
+
+To change what a project shows:
+
+- **Images:** edit `scripts/image-import.decisions.json`. Images are listed by content hash in display order, and the first exterior image is the cover.
+- **A folder match:** add the folder to `FOLDER_DECISIONS` in `scripts/image-import.config.mjs`.
+
+On the site:
+
+- `exterior` feeds the hero slider on the project page. Use exterior imagery only.
+- `interior` feeds the two-column gallery, which is hidden when empty.
+- `card` is the Visual View image, a smaller copy of `cover`.
+- `other`, `amenities`, `details`, `plans` and `archive` are in the data model and not shown yet.
+
+Images can have any dimensions. Their frames are fixed and crop with `object-fit: cover`. A project with no images keeps a neutral placeholder on its card and shows no hero or gallery on its page.
+
+## Location
+
+Approved locations live in `data/projectLocations.ts`, with a Persian address and a Google Maps link for each project. Only those projects show the Location button, which opens the link in a new tab, and the Location fact. Use the links exactly as supplied, and add one only when it has been approved.
+
+The fact is short: Persian shows the first two parts of the address, and English shows the `district`, `city` and `country` from `data/projectContent.ts`. Full Persian addresses are never machine-translated, so a project with no English place name shows no Location fact in English.
+
+## Fonts and logo
+
+English uses Lato and Persian uses IRANSansX, from local copies in `app/fonts`. They are loaded in `app/layout.tsx`, and the active language selects one through `--font-body` in `app/globals.css`, so components never name a font.
+
+Only the weights in use ship: Lato 400, and IRANSansX 400 and 500. To add one, copy the file into `app/fonts`, add it to `app/layout.tsx`, then use it through a `--weight` token.
+
+IRANSansX is a commercial font and needs a web licence from fontiran.com. Lato is under the SIL Open Font License.
+
+The logo is `public/brand/bam-logo.svg`. `components/BrandLogo.tsx` inlines the same paths with `currentColor`, so it reads in ink or reversed. Its size is set by `--logo-height` in `app/globals.css`. Arabic uses IRANSansX, which covers Arabic script; no dedicated Arabic or Farhang font file is licensed in the repository.
+
+## Language, theme and view preferences
+
+Language (`EN / FA / AR`), theme (`light / dark`) and archive view (`Visual / Index`) are saved in `localStorage`. They default to English, the system theme and Visual. All three live in `lib/preferences.ts`.
+
+Arabic is an interface language. Content without an approved `ar` value shows the verified Persian original, marked `lang="fa"` (see `resolveText` in `lib/i18n.ts`). English and Persian never fall back to each other.
+
+## Demo content and the admin prototype
+
+`next dev` shows sample events (`data/demo/events.ts`) and serves `/admin`. A production build includes neither, unless `NEXT_PUBLIC_SHOW_DEMO_CONTENT=true` or `NEXT_PUBLIC_ENABLE_ADMIN_PROTOTYPE=true` is set for a private preview. Set `NEXT_PUBLIC_SITE_URL` for canonical URLs; it defaults to `https://bamgroup.ir`.

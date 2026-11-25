@@ -1,0 +1,67 @@
+/* Admin prototype: functional, structured, data-oriented. Shares the brand
+   tokens but none of the public site's editorial styling. */
+
+.admin { min-height: 100vh; background: var(--bg-alt); color: var(--text); font-family: var(--font-latin); font-size: 14px; line-height: 1.5; }
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 24px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.admin-brand { display: inline-flex; align-items: center; gap: 12px; font-size: 14px; }
+.admin-brand svg { height: 18px; width: auto; }
+.admin-badge { padding: 4px 10px; border: 1px dashed var(--accent-text); color: var(--accent-text); font-size: 12px; }
+.admin-tabs { display: flex; gap: 4px; padding: 0 24px; background: var(--bg); border-bottom: 1px solid var(--line); overflow-x: auto; }
+.admin-tabs button { padding: 12px 14px; border: 0; border-bottom: 2px solid transparent; background: transparent; cursor: pointer; color: var(--text-3); white-space: nowrap; }
+.admin-tabs button.active { color: var(--text); border-bottom-color: var(--accent); }
+.admin-main { padding: 24px; }
+
+.admin-editor { display: grid; grid-template-columns: 220px minmax(0, 1fr) 340px; gap: 20px; align-items: start; }
+.admin-list, .admin-form, .admin-preview, .admin-media { background: var(--bg); border: 1px solid var(--line); padding: 16px; }
+.admin-list h2, .admin-preview h2 { margin: 0 0 10px; font-size: 13px; font-weight: 400; text-transform: uppercase; letter-spacing: .08em; color: var(--text-3); }
+.admin-list ul { margin: 0; padding: 0; list-style: none; }
+.admin-list li { display: grid; padding: 8px 0; border-top: 1px solid var(--line); }
+.admin-list small { color: var(--text-3); }
+.admin-form { display: grid; gap: 16px; }
+.admin-preview { position: sticky; top: 16px; }
+.admin-preview pre { margin: 0; max-height: 70vh; overflow: auto; font-size: 12px; white-space: pre-wrap; word-break: break-word; color: var(--text-2); }
+
+.admin-fieldset { margin: 0; padding: 12px; border: 1px solid var(--line); display: grid; gap: 10px; }
+.admin-fieldset legend { padding: 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--text-3); }
+.admin-trilingual { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.admin-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.admin-field { display: grid; gap: 4px; }
+.admin-field label { font-size: 12px; color: var(--text-2); }
+.admin-field input, .admin-field textarea, .admin-field select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+.admin-field input[lang="fa"], .admin-field textarea[lang="fa"], .admin-field input[lang="ar"], .admin-field textarea[lang="ar"] { font-family: var(--font-persian); }
+.admin-field input:focus-visible, .admin-field textarea:focus-visible, .admin-field select:focus-visible { outline: 2px solid var(--focus); outline-offset: 0; }
+.admin-hint { margin: 0; font-size: 12px; color: var(--text-3); }
+.admin-callout { margin: 0 0 16px; padding: 10px 12px; border-inline-start: 3px solid var(--accent); background: var(--bg-alt); }
+
+.admin-media-grid { margin: 16px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.admin-media-grid li { display: grid; gap: 8px; padding: 8px; border: 1px solid var(--line); }
+.admin-media-grid li.is-cover { border-color: var(--accent); }
+.admin-media-grid img { aspect-ratio: 4 / 3; object-fit: cover; background: var(--surface-media); }
+.admin-media-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.admin-media-actions button { padding: 6px 8px; border: 1px solid var(--line-strong); background: var(--bg); cursor: pointer; font-size: 12px; }
+.admin-media-actions button:disabled { opacity: .4; cursor: default; }
+
+@media (max-width: 1100px) {
+  .admin-editor { grid-template-columns: minmax(0, 1fr); }
+  .admin-preview { position: static; }
+}
+@media (max-width: 640px) {
+  .admin-trilingual, .admin-row { grid-template-columns: minmax(0, 1fr); }
+  .admin-main { padding: 12px; }
+}
