@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type TouchEvent } from "react";
 import { directionOf, formatNumber } from "@/lib/i18n";
 import { useLanguage } from "@/lib/usePreferences";
+import { ProjectPlaceholder } from "./ProjectMedia";
 
 const SLIDE_DURATION = 5500;
 const SWIPE_DISTANCE = 40;
@@ -29,7 +30,16 @@ export function ProjectHeroSlider({ images, title }: { images: string[]; title: 
     return () => clearTimeout(timer);
   }, [active, count, holding]);
 
-  if (count === 0) return null;
+  // No exterior photograph yet: the placeholder, in the hero's own frame.
+  if (count === 0) {
+    return (
+      <section className="detail-hero-media">
+        <div className="hero-slider-stage hero-placeholder">
+          <ProjectPlaceholder />
+        </div>
+      </section>
+    );
+  }
 
   function onTouchStart(event: TouchEvent) {
     touchStartX.current = event.touches[0].clientX;

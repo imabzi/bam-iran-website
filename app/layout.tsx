@@ -8,6 +8,7 @@ import "./globals.css";
 import "./styles/site.css";
 import "./styles/home.css";
 import "./styles/pages.css";
+import "./styles/projects.css";
 
 // The active language chooses between these in globals.css (--font-body).
 const lato = localFont({

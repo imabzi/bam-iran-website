@@ -1,0 +1,117 @@
+/*
+  Project system: status labels, the image placeholder, the shared project
+  card lines, the archive's two filter rows and the project page status line.
+  Used by components/ProjectCard.tsx, ProjectMedia.tsx, ProjectArchive.tsx and
+  ProjectDetail.tsx. Colours come from the theme tokens only.
+*/
+
+/* ---------- Status ---------- */
+
+.status-label { display: inline-flex; align-items: center; gap: .55em; color: var(--text-2); white-space: nowrap; }
+.status-dot { flex: 0 0 auto; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.status-label[data-status="under-negotiation"] .status-dot { background: transparent; box-shadow: inset 0 0 0 1.5px var(--accent); }
+.status-label[data-status="completed"] .status-dot { background: var(--text-3); }
+
+/* ---------- Image placeholder ----------
+   Fills the image frame it is placed in, so a card or hero keeps its size. */
+
+.project-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 1.2vw, 14px);
+  padding: 20px;
+  background: var(--surface-media);
+  color: var(--text-3);
+  text-align: center;
+  user-select: none;
+}
+/* A drawing-sheet frame, inset from the edge. */
+.project-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: clamp(8px, 3.5%, 18px);
+  border: 1px solid var(--line-strong);
+  opacity: .55;
+  pointer-events: none;
+}
+.project-placeholder-icon { width: clamp(40px, 14%, 76px); height: auto; opacity: .8; transition: color var(--duration-fast, .2s) ease; }
+.project-placeholder-text {
+  max-width: 85%;
+  font-size: calc(var(--fs-label) * var(--label-scale));
+  line-height: 1.6;
+  letter-spacing: calc(.04em * var(--tracking));
+}
+.project-card-unified:hover .project-placeholder-icon { color: var(--accent-text); }
+.credit-media .project-placeholder-icon { width: clamp(36px, 18%, 60px); }
+.hero-placeholder .project-placeholder-icon { width: clamp(56px, 7%, 104px); }
+.hero-placeholder .project-placeholder-text { font-size: calc(var(--fs-meta) * var(--label-scale)); }
+
+/* ---------- Card lines ----------
+   Kicker (category · status) above the name, facts (place · measurement)
+   below it. Both keep one line of height when empty, so cards stay equal. */
+
+.project-card-unified .project-card-kicker,
+.project-card-unified .project-card-facts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 1.6em;
+  margin: 0;
+  font-size: calc(var(--fs-label) * var(--label-scale));
+  font-weight: var(--weight-label);
+  line-height: 1.6;
+  letter-spacing: calc(.08em * var(--tracking));
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+.project-card-unified .project-card-kicker { margin-bottom: 6px; }
+.project-card-unified .project-card-facts { margin-top: 6px; text-transform: none; letter-spacing: calc(.02em * var(--tracking)); }
+.project-card-unified .project-card-title { margin: 0; }
+.project-card-text { min-width: 0; }
+.home-card.project-card-unified .home-card-meta { padding-top: 14px; }
+
+/* ---------- Archive filters ----------
+   Two rows in the sticky bar: status, then category and the view switch. */
+
+.archive-controls.archive-controls-stacked { flex-direction: column; align-items: stretch; gap: 0; padding: 0; }
+.archive-filter-row { display: flex; align-items: center; justify-content: space-between; gap: 12px 40px; min-width: 0; padding: 6px 0; }
+.archive-status-row { border-bottom: 1px solid var(--line); }
+.archive-status-row .category { color: var(--text-3); }
+.archive-status-row .category.active { color: var(--ink); }
+.archive-empty { margin-top: clamp(20px, 2.4vw, 32px); }
+
+/* ---------- Homepage panel ---------- */
+
+.project-panel:focus-visible { outline-offset: 6px; }
+
+/* ---------- Project page ---------- */
+
+.detail-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: clamp(12px, 1.4vw, 20px) 0 0;
+  font-size: calc(var(--fs-meta) * var(--label-scale));
+  line-height: 1.6;
+  color: var(--text-3);
+}
+.overview-lead { max-width: 470px; margin: 18px 0 0; font-size: clamp(18px, 1.5vw, 23px); line-height: calc(1.4 + var(--leading-add) / 2); color: var(--ink); }
+.overview-lead + .overview-copy { margin-top: 12px; }
+.gallery-group + .gallery-group { margin-top: clamp(28px, 3vw, 44px); }
+.gallery-group-title {
+  margin: 0 0 14px;
+  font-size: calc(var(--fs-meta) * var(--label-scale));
+  font-weight: var(--weight-label);
+  color: var(--text-2);
+}
+.project-gallery.is-contain .gallery-card { background: var(--bg-alt); }
+.project-gallery.is-contain .gallery-card img { object-fit: contain; }
+
+@media (max-width: 580px) {
+  .archive-filter-row { gap: 14px; padding: 0; }
+  .detail-status { margin-top: 10px; }
+}

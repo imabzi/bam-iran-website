@@ -120,7 +120,7 @@ function EventManager() {
         <Field label="Related projects">
           {(id) => (
             <select id={id} multiple size={6} value={projectCodes} onChange={(event) => setProjectCodes(multiSelectValues(event))}>
-              {projects.map((project) => <option key={project.code} value={project.code}>{project.title.en}</option>)}
+              {projects.map((project) => <option key={project.code} value={project.code}>{project.title.en ?? project.title.fa}</option>)}
             </select>
           )}
         </Field>
@@ -179,7 +179,7 @@ function ArchitectManager() {
         <Field label="Credited BAM projects">
           {(id) => (
             <select id={id} multiple size={6} value={projectCodes} onChange={(event) => setProjectCodes(multiSelectValues(event))}>
-              {projects.map((project) => <option key={project.code} value={project.code}>{project.title.en}</option>)}
+              {projects.map((project) => <option key={project.code} value={project.code}>{project.title.en ?? project.title.fa}</option>)}
             </select>
           )}
         </Field>

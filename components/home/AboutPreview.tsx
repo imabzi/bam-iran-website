@@ -30,7 +30,7 @@ export function AboutPreview() {
           <div className="about-image-frame">
             <Image
               src={aboutImage.src}
-              alt={project ? textOf(project.title, language) ?? project.title.en : ""}
+              alt={project ? textOf(project.title, language) ?? project.title.fa : ""}
               fill
               sizes="(max-width: 900px) 100vw, 58vw"
               className="about-image"
@@ -39,7 +39,7 @@ export function AboutPreview() {
           </div>
           {project && (
             <figcaption className="media-caption">
-              {textOf(project.title, language) ?? project.title.en}
+              {textOf(project.title, language) ?? project.title.fa}
             </figcaption>
           )}
         </figure>

@@ -31,7 +31,7 @@ export function AboutPage() {
             <div className="about-hero-frame">
               <Image src={aboutImage.src} alt={project ? textOf(project.title, language) ?? "" : ""} fill priority sizes="(max-width: 1760px) 100vw, 1680px" className="about-image" />
             </div>
-            {project && <figcaption className="media-caption">{textOf(project.title, language) ?? project.title.en}</figcaption>}
+            {project && <figcaption className="media-caption">{textOf(project.title, language) ?? project.title.fa}</figcaption>}
           </figure>
         </div>
         <section className="container about-body-grid">

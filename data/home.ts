@@ -1,4 +1,5 @@
-import { getProjectByCode, hasPhotography, projects, type CategoryId, type Project } from "./projects";
+import type { Language } from "@/lib/i18n";
+import { getProjectByCode, hasPhotography, isListedIn, projects, type Project, type ProjectStatus } from "./projects";
 
 // Homepage curation. Every image is an existing BAM photograph from the project
 // archive; nothing here adds or changes project facts.
@@ -21,11 +22,12 @@ export const heroSlides: HeroSlide[] = [
   { projectCode: "R13", src: "/projects/bam-simindokht/exterior/exterior-02.jpg", width: 2800, height: 1867, position: "50% 40%", mobilePosition: "40% 50%" },
 ];
 
-// The order in which projects are preferred for Selected Projects. A category
-// shows its curated projects first, then other photographed projects in the
-// archive's own order, up to four.
+// The order in which completed projects are preferred in the homepage
+// Projects section: these curated projects first, then other photographed
+// projects in the archive's own order, then the rest. This only orders the
+// list: a project without photographs is never left out.
 export const featuredProjectCodes = [
-  "R12", "R08", "R14", "T06", // All
+  "R12", "R08", "R14", "T06",
   "R03", "R04",
   "T02", "T01",
   "H08", "H05", "H01",
@@ -33,13 +35,17 @@ export const featuredProjectCodes = [
   "M05", "M01", "M03",
 ];
 
-export function selectedProjects(category: "all" | CategoryId, limit = 4): Project[] {
-  const inCategory = (project: Project) => category === "all" || project.category.id === category;
+// Every listed project with this status, for the homepage tabs. Ongoing and
+// negotiation projects keep the data order.
+export function homepageProjects(status: ProjectStatus, language: Language): Project[] {
+  const listed = projects.filter((project) => project.status === status && isListedIn(project, language));
+  if (status !== "completed") return listed;
   const curated = featuredProjectCodes
     .map(getProjectByCode)
-    .filter((project): project is Project => Boolean(project && inCategory(project) && hasPhotography(project)));
-  const rest = projects.filter((project) => inCategory(project) && hasPhotography(project) && !curated.includes(project));
-  return [...curated, ...rest].slice(0, limit);
+    .filter((project): project is Project => Boolean(project && listed.includes(project) && hasPhotography(project)));
+  const photographed = listed.filter((project) => hasPhotography(project) && !curated.includes(project));
+  const others = listed.filter((project) => !hasPhotography(project));
+  return [...curated, ...photographed, ...others];
 }
 
 // The About preview photograph: BAM's own head office, with the BAM sign on its facade.

@@ -1,4 +1,5 @@
-import type { ContentLanguage, TextValue } from "@/lib/i18n";
+import { resolveText, type ContentLanguage, type Language, type TextValue } from "@/lib/i18n";
+import { currentProjects } from "./currentProjects";
 import { projectContent } from "./projectContent";
 import { approvedLocations } from "./projectLocations";
 import { importedProjectImages } from "./projectImages.generated";
@@ -15,7 +16,46 @@ export type CategoryId = "residential" | "commercial-leisure" | "large-scale" | 
 
 export type ProjectCategory = LocalizedText & { id: CategoryId };
 
+// Project lifecycle, kept separate from the category. A project moves from
+// negotiation to ongoing to completed by changing `status` alone: its code,
+// slug, URL and content stay the same.
+export type ProjectStatus = "ongoing" | "under-negotiation" | "completed";
+
+// In display order: the homepage tabs and archive filter follow it.
+export const projectStatuses: Record<ProjectStatus, LocalizedText & { id: ProjectStatus }> = {
+  ongoing: { id: "ongoing", en: "Ongoing", fa: "در حال اجرا", ar: "قيد التنفيذ" },
+  "under-negotiation": { id: "under-negotiation", en: "Under negotiation", fa: "در حال مذاکره", ar: "قيد التفاوض" },
+  completed: { id: "completed", en: "Completed", fa: "تکمیل‌شده", ar: "مكتمل" },
+};
+export const projectStatusIds = Object.keys(projectStatuses) as ProjectStatus[];
+
+export function isProjectStatus(value: string | null | undefined): value is ProjectStatus {
+  return Boolean(value && value in projectStatuses);
+}
+
+// A development classification, shown on cards in place of a category label
+// when one is recorded.
+export type DevelopmentClassId = "master-development";
+export const developmentClasses: Record<DevelopmentClassId, LocalizedText & { id: DevelopmentClassId }> = {
+  "master-development": { id: "master-development", en: "Master Development", fa: "مستر دولوپمنت", ar: "التطوير الشامل" },
+};
+
+// Publication is decided here and nowhere else. `published` records appear in
+// the homepage, the archive, the sitemap and at /projects/<slug>; `draft`
+// records are kept in the data but are not built or listed. Missing images or
+// facts never affect publication.
+export type ProjectPublication = "published" | "draft";
+
+export type ProjectDrawing = {
+  src: string;
+  block?: PartialLocalizedText; // The building or block the drawing belongs to.
+  caption?: PartialLocalizedText;
+};
+
+// Every list may be empty and every single image may be missing: cards and the
+// project page then show the neutral placeholder (components/ProjectMedia.tsx).
 export type ProjectImages = {
+  hero?: string; // A chosen hero image. Otherwise the first exterior image.
   cover?: string;
   card?: string; // A smaller copy of the cover for the Visual View.
   exterior: string[]; // Feeds the hero slider. Exterior photography only.
@@ -23,48 +63,89 @@ export type ProjectImages = {
   other?: string[]; // Imported but unclassified. Not displayed.
   amenities?: string[];
   details?: string[];
-  plans?: string[];
+  plans?: string[]; // Imported plan sheets. Not displayed until approved.
   archive?: string[];
+  // Approved for publication. Each shows as its own section when not empty.
+  sitePlans?: string[];
+  drawings?: ProjectDrawing[]; // Grouped by `block` on the project page.
+  floorPlans?: string[];
+  progress?: string[]; // Construction progress photography.
+  gallery?: string[]; // Renders and other approved photographs.
 };
 
 export type ProjectLocation = {
   country?: PartialLocalizedText;
+  province?: PartialLocalizedText;
   city?: PartialLocalizedText;
   district?: PartialLocalizedText;
   addressFa?: string; // The approved full address. Persian only: never machine-translated.
   googleMapsUrl?: string; // The approved link, used exactly as supplied.
+  coordinates?: { lat: number; lng: number }; // Verified only; never inferred from a name.
 };
 
+export type AreaFact = "siteArea" | "builtUpArea" | "grossFloorArea";
+
 // Only add verified values. Anything left out is hidden on the project page.
+// Never store 0 or a guess for an unknown value: leave the field out.
 export type ProjectFacts = {
   completionYear?: PartialLocalizedText; // e.g. { en: "2023", fa: "۱۴۰۱" }
+  startDate?: PartialLocalizedText;
+  estimatedCompletion?: PartialLocalizedText;
   siteArea?: number; // m²
   builtUpArea?: number; // m²
   grossFloorArea?: number; // m²
+  // How an area was supplied: in hectares, or as an approximate value. The
+  // stored value is always m²; this only changes how it is shown.
+  areaDisplay?: Partial<Record<AreaFact, { unit?: "ha"; approximate?: boolean }>>;
   floors?: number;
   units?: number;
-  buildings?: number;
+  buildings?: number; // Buildings or blocks.
   parking?: number;
+  use?: PartialLocalizedText; // Usage or function.
   structure?: PartialLocalizedText;
   facade?: PartialLocalizedText;
   architect?: PartialLocalizedText;
+  // Stakeholders. Each role is its own field: never assume that the client,
+  // owner, developer, builder and construction manager are the same party.
+  client?: PartialLocalizedText;
+  owner?: PartialLocalizedText;
   developer?: PartialLocalizedText;
+  builder?: PartialLocalizedText;
   contractor?: PartialLocalizedText;
-  status?: PartialLocalizedText;
+  constructionManager?: PartialLocalizedText;
+  projectManagement?: PartialLocalizedText;
+  participants?: PartialLocalizedText[]; // Participating companies.
+  partners?: PartialLocalizedText[]; // Other verified partners.
+  status?: PartialLocalizedText; // Legacy free-text status. Superseded by Project.status.
 };
 
+// A project's name. Persian always exists; English and Arabic are added once
+// approved. Use projectTitle() for a string in the active language.
+export type ProjectTitle = PartialLocalizedText & { fa: string };
+
 export type Project = {
-  code: string;
-  slug: string;
-  title: LocalizedText;
-  category: ProjectCategory;
-  description?: PartialLocalizedText;
+  code: string; // Stable id. Never encodes the status.
+  slug: string; // Stable URL segment.
+  title: ProjectTitle;
+  status: ProjectStatus;
+  category?: ProjectCategory; // Left out until verified: the project still lists under "All".
+  classification?: LocalizedText & { id: DevelopmentClassId };
+  publication: ProjectPublication;
+  summary?: PartialLocalizedText; // Short description.
+  description?: PartialLocalizedText; // Full description.
   images: ProjectImages;
   location?: ProjectLocation;
   facts: ProjectFacts;
 };
 
-export type ProjectContent = Partial<Pick<Project, "description" | "images" | "location" | "facts">>;
+// A record in data/currentProjects.ts, which names its category and
+// classification by id (that file imports only types from this one).
+export type ProjectRecord = Omit<Project, "category" | "classification"> & {
+  categoryId?: CategoryId;
+  classificationId?: DevelopmentClassId;
+};
+
+export type ProjectContent = Partial<Pick<Project, "status" | "summary" | "description" | "images" | "location" | "facts">>;
 
 // The approved category order and labels. The internal ids are unchanged.
 export const projectCategories: Record<CategoryId, ProjectCategory> = {
@@ -75,22 +156,10 @@ export const projectCategories: Record<CategoryId, ProjectCategory> = {
   "large-scale": { id: "large-scale", en: "Developments", fa: "پروژه‌های کلان", ar: "المشاريع الكبرى" },
 };
 
-const exteriorPlaceholders = [
-  "/placeholders/arch-01.svg",
-  "/placeholders/arch-02.svg",
-  "/placeholders/arch-03.svg",
-  "/placeholders/arch-04.svg",
-  "/placeholders/arch-05.svg",
-  "/placeholders/arch-06.svg",
-];
-
-// A project with no photography keeps a neutral placeholder on its Visual View
-// card. Its page shows no hero or gallery rather than an image of nothing.
-const placeholderImages = (index: number): ProjectImages => ({
-  cover: exteriorPlaceholders[index % exteriorPlaceholders.length],
-  exterior: [],
-  interior: [],
-});
+// A project with no photography has empty image lists. Cards and the project
+// page then show the neutral placeholder from components/ProjectMedia.tsx, so
+// a missing image never hides a project or leaves an empty frame.
+const noImages = (): ProjectImages => ({ exterior: [], interior: [] });
 
 const raw: ReadonlyArray<readonly [string, string, string, CategoryId]> = [
   ["R01","بام جمشیدیه","BAM Jamshidieh","residential"],
@@ -135,7 +204,9 @@ const raw: ReadonlyArray<readonly [string, string, string, CategoryId]> = [
   ["M02","پروژه ایران‌خودرو","Iran Khodro Project","large-scale"],
   ["M03","بوستان عسلویه","Boostan Asaluyeh","large-scale"],
   ["M04","گلستان مشکین‌شهر","Golestan Meshgin Shahr","large-scale"],
-  ["M05","شهرک بام لند شیراز","BAM Land Shiraz Township","large-scale"],
+  // M05 is the project supplied in 1405 as «بام لند شیراز» (previously listed as
+  // «شهرک بام لند شیراز»): same project, so its code, slug and renders are kept.
+  ["M05","بام لند شیراز","BAM Land Shiraz Township","large-scale"],
   ["H01","بیمارستان نیکان","Nikan Hospital","healthcare"],
   ["H02","کلینیک عرفان","Erfan Clinic","healthcare"],
   ["H03","مرکز ملی سرطان","National Cancer Center","healthcare"],
@@ -161,33 +232,89 @@ function slugify(value: string) {
     .replace(/^-|-$/g, "");
 }
 
-export const projects: Project[] = raw.map(([code, titleFa, titleEn, categoryId], index) => {
+// The archive's existing portfolio is completed work unless its content
+// records another status (see projectContent.ts).
+const archiveProjects: Project[] = raw.map(([code, titleFa, titleEn, categoryId]) => {
   const content = projectContent[code];
   return {
     code,
     slug: slugify(titleEn),
     title: { en: titleEn, fa: titleFa },
+    status: content?.status ?? "completed",
     category: projectCategories[categoryId],
+    publication: "published",
+    summary: content?.summary,
     description: content?.description,
-    images: content?.images ?? importedProjectImages[code] ?? placeholderImages(index),
+    images: content?.images ?? importedProjectImages[code] ?? noImages(),
     location: { ...content?.location, ...approvedLocations[code] },
     facts: content?.facts ?? {},
   };
 });
+
+const statusOrder = (project: Project) => projectStatusIds.indexOf(project.status);
+
+// Every record, in display order: ongoing, then under negotiation, then
+// completed, each keeping its order in the data.
+const addedProjects: Project[] = currentProjects.map(({ categoryId, classificationId, ...record }) => ({
+  ...record,
+  category: categoryId ? projectCategories[categoryId] : undefined,
+  classification: classificationId ? developmentClasses[classificationId] : undefined,
+}));
+
+const allProjects: Project[] = [...archiveProjects, ...addedProjects]
+  .map((project, index) => ({ project, index }))
+  .sort((a, b) => statusOrder(a.project) - statusOrder(b.project) || a.index - b.index)
+  .map(({ project }) => project);
+
+// Codes and slugs must stay unique: a duplicate fails the build.
+for (const key of ["code", "slug"] as const) {
+  const seen = new Set<string>();
+  for (const project of allProjects) {
+    if (seen.has(project[key])) throw new Error(`Duplicate project ${key}: ${project[key]}`);
+    seen.add(project[key]);
+  }
+}
+
+export function isPublished(project: Project) {
+  return project.publication === "published";
+}
+
+// The one project list used by the homepage, the archive, project pages,
+// architects, events and the sitemap.
+export const projects: Project[] = allProjects.filter(isPublished);
 
 export function getProject(slug: string) {
   return projects.find((project) => project.slug === slug);
 }
 
 export function getCoverImage(project: Project): string | undefined {
-  return project.images.card ?? project.images.cover ?? project.images.exterior[0];
+  return project.images.card ?? project.images.cover ?? project.images.hero ?? project.images.exterior[0];
 }
 
 export function getProjectByCode(code: string) {
   return projects.find((project) => project.code === code);
 }
 
-// True when the project has real photography rather than a neutral placeholder.
+// True when the project has real photography. Used for ordering only: a
+// project without photography is never hidden.
 export function hasPhotography(project: Project) {
-  return project.images.exterior.length > 0;
+  return project.images.exterior.length > 0 || Boolean(project.images.hero);
+}
+
+// The project's name in the active language. Persian and Arabic always have
+// one; English shows the Persian name, marked as such, until an English name is
+// approved.
+export function projectTitleText(project: Project, language: Language) {
+  return resolveText(project.title, language) ?? { text: project.title.fa, lang: "fa" as Language };
+}
+
+export function projectTitle(project: Project, language: Language) {
+  return projectTitleText(project, language).text;
+}
+
+// Whether the project is listed in this language. A record whose name exists
+// only in Persian is listed in Persian and Arabic (which shows the Persian
+// original) but not yet in English, which never mixes in Persian text.
+export function isListedIn(project: Project, language: Language) {
+  return resolveText(project.title, language) !== undefined;
 }

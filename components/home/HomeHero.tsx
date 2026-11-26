@@ -89,7 +89,7 @@ export function HomeHero() {
             {(index === 0 || mounted) && (
               <Image
                 src={item.src}
-                alt={textOf(item.project.title, language) ?? item.project.title.en}
+                alt={textOf(item.project.title, language) ?? item.project.title.fa}
                 fill
                 sizes="100vw"
                 priority={index === 0}

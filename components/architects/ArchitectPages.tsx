@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { architectBio, architectContact, architects, projectsForArchitect, type Architect } from "@/data/architects";
 import { events } from "@/data/events";
@@ -16,6 +15,7 @@ import { roleLabel } from "../ProjectInformation";
 import { SiteFooter } from "../SiteFooter";
 import { LocalizedText, Ltr, telHref } from "../Text";
 import { DemoBadge, PageIntro, SectionHeading } from "../ui";
+import { ProjectImage } from "../ProjectMedia";
 
 export function ArchitectDirectory() {
   const { t } = useLanguage();
@@ -134,7 +134,7 @@ export function ArchitectProfile({ architect }: { architect: Architect }) {
                   <li key={project.code}>
                     <Link href={`/projects/${project.slug}`} className="credit-card">
                       <div className="credit-media">
-                        {cover && <Image src={cover} alt="" fill sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 25vw" className="credit-image" />}
+                        <ProjectImage src={cover} alt="" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 25vw" className="credit-image" caption={false} />
                       </div>
                       <LocalizedText as="h3" className="credit-title" value={project.title} language={language} />
                       <p className="credit-meta">

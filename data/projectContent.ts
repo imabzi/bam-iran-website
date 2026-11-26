@@ -361,7 +361,15 @@ export const projectContent: Record<string, ProjectContent> = {
       fa: "شهرکی ۳۰ هکتاری در شیراز برای زندگی، کار و تفریح. استخرها و مجموعه‌های ورزشی، مرکز خرید، مرکز درمانی، بیوتی سنتر، واحدهای اداری و هتل پنج ستاره در طرح آن پیش‌بینی شده است.",
     },
     location: { city: { en: "Shiraz", fa: "شیراز" }, country: iran },
-    facts: { siteArea: 300000 },
+    // Status, units, owner and builder from BAM's 1405 project update
+    // («بام لند شیراز»). Owner and builder are recorded as separate roles.
+    status: "ongoing",
+    facts: {
+      siteArea: 300000,
+      units: 7777,
+      owner: { fa: "شرکت بام شهر" },
+      builder: { fa: "شرکت بام شهر" },
+    },
   },
   H07: {
     description: {

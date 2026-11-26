@@ -115,7 +115,7 @@ export function ArticleDetail({ article }: { article: Article }) {
                   <ul className="link-list">
                     {projects.map((project) => (
                       <li key={project.code}>
-                        <TextLink href={`/projects/${project.slug}`}>{textOf(project.title, language) ?? project.title.en}</TextLink>
+                        <TextLink href={`/projects/${project.slug}`}>{textOf(project.title, language) ?? project.title.fa}</TextLink>
                       </li>
                     ))}
                   </ul>

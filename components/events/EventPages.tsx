@@ -14,6 +14,7 @@ import { Header } from "../Header";
 import { SiteFooter } from "../SiteFooter";
 import { LocalizedText } from "../Text";
 import { DemoBadge, PageIntro, SectionHeading, TextLink } from "../ui";
+import { ProjectImage } from "../ProjectMedia";
 
 type Filter = "all" | "upcoming" | "past";
 
@@ -88,7 +89,7 @@ function RelatedProjectCard({ project }: { project: Project }) {
   return (
     <Link href={`/projects/${project.slug}`} className="credit-card">
       <div className="credit-media">
-        {cover && <Image src={cover} alt="" fill sizes="(max-width: 700px) 100vw, 25vw" className="credit-image" />}
+        <ProjectImage src={cover} alt="" sizes="(max-width: 700px) 100vw, 25vw" className="credit-image" caption={false} />
       </div>
       <LocalizedText as="h3" className="credit-title" value={project.title} language={language} />
       <LocalizedText as="p" className="credit-meta" value={project.category} language={language} />

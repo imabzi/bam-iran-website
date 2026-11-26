@@ -72,7 +72,7 @@ function ActivityDrawing({ kind }: { kind: ActivityIllustration }) {
 function ActivityVisual({ activity, language, sizes }: { activity: Activity; language: Language; sizes: string }) {
   const project = activity.image ? getProjectByCode(activity.image.projectCode) : undefined;
   if (activity.image && project) {
-    const title = textOf(project.title, language) ?? project.title.en;
+    const title = textOf(project.title, language) ?? project.title.fa;
     return (
       <figure className="activity-figure">
         <div className="activity-frame">
