@@ -3,14 +3,13 @@
 import { useId, useState } from "react";
 import { featuredArchitects } from "@/data/architects";
 import { homepageEvents, pastEvents, upcomingEvents, visibleEvents } from "@/data/events";
-import { articles } from "@/data/journal";
 import { useLanguage, useNow } from "@/lib/usePreferences";
 import { ArchitectCard } from "../ArchitectCard";
 import type { ArtworkVariant } from "../ArchitectVectorArtwork";
-import { ArticleCard } from "../ArticleCard";
 import { DragCarousel } from "../DragCarousel";
 import { EventCard } from "../EventCard";
 import { EventCategoryTabs, type EventTab } from "../events/EventTabs";
+import { homepageJournalSlides, JournalSlider } from "../journal/JournalSlider";
 import { SectionHeading, TextLink } from "../ui";
 
 export function ArchitectsPreview() {
@@ -37,9 +36,10 @@ export function ArchitectsPreview() {
   );
 }
 
-// Always shown. In development the clearly labelled sample events (data/demo)
-// fill it; a production build contains only real published events, and while
-// there are none the heading and tabs stay with a localized empty state.
+// Always shown. While demonstration content is on (lib/demo.ts) the clearly
+// labelled sample events (data/demo) fill it; otherwise only real published
+// events appear, and while there are none the heading and tabs stay with a
+// localized empty state.
 export function EventsPreview() {
   const { t } = useLanguage();
   const now = useNow();
@@ -85,22 +85,17 @@ export function EventsPreview() {
   );
 }
 
+// An editorial slider, one article at a time. See components/journal/JournalSlider.tsx.
 export function JournalPreview() {
   const { t } = useLanguage();
-  const list = articles.slice(0, 3);
-  if (list.length === 0) return null;
+  const slides = homepageJournalSlides();
+  if (slides.length === 0) return null;
 
   return (
     <section className="section home-journal" aria-labelledby="journal-title">
       <div className="container">
         <SectionHeading id="journal-title" title={t.journalTitle} action={<TextLink href="/journal">{t.journalAll}</TextLink>} />
-        <ol className="journal-list">
-          {list.map((article) => (
-            <li key={article.id}>
-              <ArticleCard article={article} layout="row" />
-            </li>
-          ))}
-        </ol>
+        <JournalSlider slides={slides} />
       </div>
     </section>
   );

@@ -10,14 +10,14 @@ The repository has **no backend, database, storage or authentication**. Content 
 | Normalised relationships | `projectCredits` (architect ↔ project, with role and source); `BamEvent.projectCodes` / `architectIds` / `speakers[].architectId`; `Article.relatedProjectCodes` | Production |
 | Publication states | `BamEvent.publication` and `Article.status`: `draft`, `scheduled` (+ `publishAt`), `published`, `archived` | Modelled; only `published` (and due `scheduled` events) render |
 | Event timing | `eventTiming()` computes upcoming, ongoing or past from `startsAt`/`endsAt` in the visitor's browser, separately from publication state | Production |
-| Demo content separation | `data/demo/events.ts`, gated by `showDemoContent` in `lib/demo.ts` | Development only |
+| Demo content separation | `data/demo/events.ts`, `data/demo/journal.ts`, `data/demo/architectBios.ts`, gated by `demoContent` in `lib/demo.ts` | Sample events and Journal articles public while `PUBLIC_DESIGN_REVIEW` is on; architect bios development only |
 | Admin UI prototype | `/admin` (`app/admin/`, `components/admin/AdminPrototype.tsx`) | Development only; `noindex`; disallowed in `robots.txt`; returns 404 in a normal production build |
 
 The prototype has three screens: Event Manager, Architect Manager (with project credits and roles) and Media Library (local preview, ordering, alt text, cover choice). Each form shows the record it would produce, using the same field names as the TypeScript types. **Nothing is saved or uploaded, and there is no login.** It must not be exposed as an editing tool.
 
 Flags (set only for private previews):
 
-- `NEXT_PUBLIC_SHOW_DEMO_CONTENT=true`: include sample events in a production build.
+- `NEXT_PUBLIC_SHOW_DEMO_CONTENT=true`: include every sample, including architect biographies, in a production build. (The public design-review switch is `PUBLIC_DESIGN_REVIEW` in `lib/demo.ts`.)
 - `NEXT_PUBLIC_ENABLE_ADMIN_PROTOTYPE=true`: serve `/admin` in a production build. Even then it saves nothing.
 
 ## What production CMS functionality still needs

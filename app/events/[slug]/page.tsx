@@ -5,8 +5,8 @@ import { events, getEvent } from "@/data/events";
 
 type Props = { params: Promise<{ slug: string }> };
 
-// Only events in the data exist. Sample events (development only) are never
-// part of a production build, so their URLs return 404 there.
+// Only events in the data exist. Sample event pages exist only while
+// demonstration content is on (lib/demo.ts), and are never indexed.
 export const dynamicParams = false;
 
 export function generateStaticParams() {

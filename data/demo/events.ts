@@ -3,9 +3,9 @@ import type { BamEvent } from "../events";
 // DEMONSTRATION CONTENT — NOT REAL BAM EVENTS.
 //
 // These records exist only to review the Events layouts (homepage, directory,
-// detail page) before real events are supplied. They are included only when
-// `showDemoContent` (lib/demo.ts) is true, which a normal production build never
-// is. Every title says "Sample", every record has `demo: true`, and the interface
+// detail page) before real events are supplied. They are included only while
+// `demoContent.events` (lib/demo.ts) is on, which it is during the public
+// design review. Every title says "Sample", every record has `demo: true`, and the interface
 // marks each one with a Demo badge. They name no real person, and they use
 // existing BAM photography only as clearly labelled temporary media.
 // Delete this file's contents once real events exist.

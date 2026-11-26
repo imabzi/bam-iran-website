@@ -1,11 +1,13 @@
+import { demoContent } from "@/lib/demo";
 import type { TextValue } from "@/lib/i18n";
+import { demoEvents } from "./demo/events";
 
 // BAM events.
 //
-// No real event has been supplied yet, so `publishedEvents` is empty and the
-// homepage Events section shows its localized empty state in production. Add approved events here (or,
-// later, through the CMS). Never add a fictional event to this list: sample
-// records live in data/demo/events.ts and are excluded from production builds.
+// No real event has been supplied yet, so `publishedEvents` is empty. Add
+// approved events here (or, later, through the CMS). Never add a fictional
+// event to this list: sample records live in data/demo/events.ts and appear
+// only while demonstration content is switched on in lib/demo.ts.
 
 export type PublicationStatus = "draft" | "scheduled" | "published" | "archived";
 export type EventTiming = "upcoming" | "ongoing" | "past";
@@ -52,18 +54,11 @@ function isLive(event: BamEvent, now: number) {
 
 // Every event a visitor may see, ignoring the time-based scheduled check
 // (applied in `visibleEvents`, which runs on the client with the real time).
-// The sample module is required only when demo content is enabled. The
-// condition is a build-time constant (next.config.ts), so a production build
-// leaves the sample data out of every bundle.
-const demoEvents: BamEvent[] =
-  process.env.BAM_SHOW_DEMO_CONTENT === "true"
-    ? // eslint-disable-next-line @typescript-eslint/no-require-imports
-      (require("./demo/events") as typeof import("./demo/events")).demoEvents
-    : [];
-
+// The labelled sample events are included only while `demoContent.events`
+// (lib/demo.ts) is on.
 export const events: BamEvent[] = [
   ...publishedEvents,
-  ...demoEvents,
+  ...(demoContent.events ? demoEvents : []),
 ].filter((event) => event.publication === "published" || event.publication === "scheduled");
 
 export function visibleEvents(now: number | null) {

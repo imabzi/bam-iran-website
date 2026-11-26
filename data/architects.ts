@@ -1,13 +1,12 @@
+import { demoContent } from "@/lib/demo";
 import type { TextValue } from "@/lib/i18n";
+import { demoArchitectBios } from "./demo/architectBios";
 import { getProjectByCode, projects, type Project } from "./projects";
 
-// Development-only sample biographies (data/demo/architectBios.ts), required
-// only when demo content is enabled: a production build leaves them out entirely.
+// Sample biographies (data/demo/architectBios.ts). Development only: they are
+// not part of the public design review. See `demoContent` in lib/demo.ts.
 const demoBios: Record<string, { bioShort?: TextValue; bioLong?: TextValue }> =
-  process.env.BAM_SHOW_DEMO_CONTENT === "true"
-    ? // eslint-disable-next-line @typescript-eslint/no-require-imports
-      (require("./demo/architectBios") as typeof import("./demo/architectBios")).demoArchitectBios
-    : {};
+  demoContent.architectBios ? demoArchitectBios : {};
 
 // Architects and design professionals connected with BAM projects.
 //

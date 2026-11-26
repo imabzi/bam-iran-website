@@ -18,8 +18,8 @@ export function directionOf(language: Language) {
 
 const numberLocales: Record<Language, string> = { en: "en-US", fa: "fa-IR", ar: "ar" };
 
-export function formatNumber(value: number, language: Language) {
-  return new Intl.NumberFormat(numberLocales[language]).format(value);
+export function formatNumber(value: number, language: Language, options?: Intl.NumberFormatOptions) {
+  return new Intl.NumberFormat(numberLocales[language], options).format(value);
 }
 
 // Persian dates use the Solar Hijri calendar, English and Arabic the Gregorian one.
@@ -201,7 +201,7 @@ const en = {
   relatedProjects: "Related Projects",
   relatedArchitects: "Architects",
   demoBadge: "Demo",
-  demoNotice: "Demonstration content for design review. It is never published in a production build.",
+  demoNotice: "Temporary sample content for design review. Not a real BAM event.",
 
   // Journal
   activityViewCategory: (category: string) => `View in the archive: ${category}`,
@@ -232,6 +232,14 @@ const en = {
   journalAll: "All articles",
   journalFilterLabel: "Article categories",
   readArticle: "Read article",
+  journalSliderLabel: "Featured articles",
+  journalSlideLabel: (position: string, total: string) => `Article ${position} of ${total}`,
+  journalShowArticle: (position: string) => `Show article ${position}`,
+  journalPrevious: "Previous article",
+  journalNext: "Next article",
+  journalPause: "Pause articles",
+  journalPlay: "Play articles",
+  journalDemoNote: "Sample article for design review. Not a BAM announcement.",
   publishedIn: "Published in Persian",
   originalSource: "Original publication on bamgroup.ir",
   moreFromJournal: "More from the Journal",
@@ -388,7 +396,7 @@ const fa: Dictionary = {
   relatedProjects: "پروژه‌های مرتبط",
   relatedArchitects: "معماران",
   demoBadge: "نمونه",
-  demoNotice: "محتوای نمونه برای بررسی طراحی. این محتوا هرگز در نسخه نهایی منتشر نمی‌شود.",
+  demoNotice: "محتوای نمونه موقت برای بررسی طراحی. این رویداد واقعی نیست.",
 
   activityViewCategory: (category) => `مشاهده در آرشیو: ${category}`,
   activityRelatedArticle: "مطلب مرتبط در ژورنال بام",
@@ -418,6 +426,14 @@ const fa: Dictionary = {
   journalAll: "همه مطالب",
   journalFilterLabel: "دسته‌بندی مطالب",
   readArticle: "خواندن مطلب",
+  journalSliderLabel: "مطالب برگزیده",
+  journalSlideLabel: (position, total) => `مطلب ${position} از ${total}`,
+  journalShowArticle: (position) => `نمایش مطلب ${position}`,
+  journalPrevious: "مطلب قبلی",
+  journalNext: "مطلب بعدی",
+  journalPause: "توقف نمایش مطالب",
+  journalPlay: "پخش نمایش مطالب",
+  journalDemoNote: "مطلب نمونه برای بررسی طراحی. این مطلب خبر رسمی بام نیست.",
   publishedIn: "منتشرشده به فارسی",
   originalSource: "انتشار اصلی در bamgroup.ir",
   moreFromJournal: "مطالب دیگر ژورنال",
@@ -570,7 +586,7 @@ const ar: Dictionary = {
   relatedProjects: "مشاريع ذات صلة",
   relatedArchitects: "المعماريون",
   demoBadge: "تجريبي",
-  demoNotice: "محتوى تجريبي لمراجعة التصميم، ولا يُنشر أبدًا في النسخة النهائية.",
+  demoNotice: "محتوى تجريبي مؤقت لمراجعة التصميم، وليس فعالية حقيقية لبام.",
 
   activityViewCategory: (category) => `عرض في الأرشيف: ${category}`,
   activityRelatedArticle: "مقال ذو صلة في مجلة بام",
@@ -600,6 +616,14 @@ const ar: Dictionary = {
   journalAll: "جميع المقالات",
   journalFilterLabel: "فئات المقالات",
   readArticle: "اقرأ المقال",
+  journalSliderLabel: "مقالات مختارة",
+  journalSlideLabel: (position, total) => `المقال ${position} من ${total}`,
+  journalShowArticle: (position) => `عرض المقال ${position}`,
+  journalPrevious: "المقال السابق",
+  journalNext: "المقال التالي",
+  journalPause: "إيقاف عرض المقالات",
+  journalPlay: "تشغيل عرض المقالات",
+  journalDemoNote: "مقال تجريبي لمراجعة التصميم، وليس خبرًا رسميًا من بام.",
   publishedIn: "منشور باللغة الفارسية",
   originalSource: "النشر الأصلي على bamgroup.ir",
   moreFromJournal: "المزيد من المجلة",
