@@ -12,7 +12,7 @@ export type LocalizedText = Record<ContentLanguage, string> & { ar?: string };
 // fall back to each other: text missing in one of them is hidden there.
 export type PartialLocalizedText = TextValue;
 
-export type CategoryId = "residential" | "commercial-leisure" | "large-scale" | "healthcare" | "international";
+export type CategoryId = "residential" | "commercial-leisure" | "hospitality" | "sports" | "large-scale" | "healthcare" | "international";
 
 export type ProjectCategory = LocalizedText & { id: CategoryId };
 
@@ -71,7 +71,12 @@ export type ProjectImages = {
   floorPlans?: string[];
   progress?: string[]; // Construction progress photography.
   gallery?: string[]; // Renders and other approved photographs.
+  videos?: string[]; // Approved construction or project videos (MP4).
 };
+
+// An approved downloadable brochure. The button appears only when this is set,
+// so add it together with the file in public/.
+export type ProjectBrochure = { src: string; sizeLabel?: PartialLocalizedText };
 
 export type ProjectLocation = {
   country?: PartialLocalizedText;
@@ -117,6 +122,14 @@ export type ProjectFacts = {
   participants?: PartialLocalizedText[]; // Participating companies.
   partners?: PartialLocalizedText[]; // Other verified partners.
   status?: PartialLocalizedText; // Legacy free-text status. Superseded by Project.status.
+  // Technical details and construction challenges. Verified statements only:
+  // never inferred from photographs. Shown in their own section when present.
+  constructionMethod?: PartialLocalizedText;
+  siteConditions?: PartialLocalizedText;
+  engineeringChallenges?: PartialLocalizedText;
+  technicalSolutions?: PartialLocalizedText;
+  qualityControl?: PartialLocalizedText;
+  engineeringAchievements?: PartialLocalizedText;
 };
 
 // A project's name. Persian always exists; English and Arabic are added once
@@ -136,6 +149,7 @@ export type Project = {
   images: ProjectImages;
   location?: ProjectLocation;
   facts: ProjectFacts;
+  brochure?: ProjectBrochure;
 };
 
 // A record in data/currentProjects.ts, which names its category and
@@ -145,12 +159,14 @@ export type ProjectRecord = Omit<Project, "category" | "classification"> & {
   classificationId?: DevelopmentClassId;
 };
 
-export type ProjectContent = Partial<Pick<Project, "status" | "summary" | "description" | "images" | "location" | "facts">>;
+export type ProjectContent = Partial<Pick<Project, "status" | "summary" | "description" | "images" | "location" | "facts" | "brochure">>;
 
 // The approved category order and labels. The internal ids are unchanged.
 export const projectCategories: Record<CategoryId, ProjectCategory> = {
   residential: { id: "residential", en: "Residential", fa: "مسکونی", ar: "سكني" },
   "commercial-leisure": { id: "commercial-leisure", en: "Commercial", fa: "تجاری", ar: "تجاري" },
+  hospitality: { id: "hospitality", en: "Hospitality", fa: "هتل و اقامتگاه", ar: "الفنادق والضيافة" },
+  sports: { id: "sports", en: "Sports", fa: "ورزشی", ar: "رياضي" },
   healthcare: { id: "healthcare", en: "Medical", fa: "پزشکی", ar: "طبي" },
   international: { id: "international", en: "International", fa: "بین‌المللی", ar: "دولي" },
   "large-scale": { id: "large-scale", en: "Developments", fa: "پروژه‌های کلان", ar: "المشاريع الكبرى" },
@@ -193,10 +209,10 @@ const raw: ReadonlyArray<readonly [string, string, string, CategoryId]> = [
   ["T05","بام سنتر یگانه","BAM Center Yeganeh","commercial-leisure"],
   ["T06","بام سنتر کامرانیه","BAM Center Kamranieh","commercial-leisure"],
   ["T07","مجتمع تجاری نیایش","Niayesh Commercial Complex","commercial-leisure"],
-  ["T08","باشگاه سوارکاری بام","BAM Equestrian Club","commercial-leisure"],
+  ["T08","باشگاه سوارکاری بام","BAM Equestrian Club","sports"],
   ["T09","بام‌لند","Bamland","commercial-leisure"],
   ["T10","دریاچه مصنوعی خلیج فارس","Persian Gulf Artificial Lake","commercial-leisure"],
-  ["T11","هتل آراز","Araz Hotel","commercial-leisure"],
+  ["T11","هتل آراز","Araz Hotel","hospitality"],
   ["T12","بام سنتر بخارست","BAM Center Bokharest","commercial-leisure"],
   ["T13","بام سنتر وصالی","BAM Center Vesali","commercial-leisure"],
   ["T14","بام آدرس شیراز","BAM Address Shiraz","commercial-leisure"],
@@ -248,6 +264,7 @@ const archiveProjects: Project[] = raw.map(([code, titleFa, titleEn, categoryId]
     images: content?.images ?? importedProjectImages[code] ?? noImages(),
     location: { ...content?.location, ...approvedLocations[code] },
     facts: content?.facts ?? {},
+    brochure: content?.brochure,
   };
 });
 

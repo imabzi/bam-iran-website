@@ -4,10 +4,15 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { isListedIn, isProjectStatus, projectCategories, projects, type CategoryId } from "@/data/projects";
 import { useDocumentTitle, useLanguage, useViewMode } from "@/lib/usePreferences";
 import { CategoryFilter, type CategorySelection } from "./CategoryFilter";
+import dynamic from "next/dynamic";
 import { ProjectIndexList } from "./ProjectIndexList";
 import { ProjectStatusFilter, type StatusSelection } from "./ProjectStatusFilter";
 import { ProjectVisualGrid } from "./ProjectVisualGrid";
 import { ViewSwitcher } from "./ViewSwitcher";
+
+// Leaflet touches the window, so the map view loads in the browser only, and
+// only when it is chosen.
+const ProjectMapView = dynamic(() => import("./ProjectMapView").then((module) => module.ProjectMapView), { ssr: false });
 
 export function ProjectArchive() {
   const { language, t } = useLanguage();
@@ -77,10 +82,12 @@ export function ProjectArchive() {
       </div>
       {visible.length === 0 ? (
         <p className="empty-state archive-empty">{t.projectsEmpty}</p>
-      ) : view === "visual" ? (
-        <ProjectVisualGrid projects={visible} />
-      ) : (
+      ) : view === "map" ? (
+        <ProjectMapView projects={visible} />
+      ) : view === "index" ? (
         <ProjectIndexList projects={visible} />
+      ) : (
+        <ProjectVisualGrid projects={visible} />
       )}
     </section>
   );

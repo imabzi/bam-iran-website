@@ -12,6 +12,7 @@ import { ProjectStatusLabel } from "./ProjectCard";
 import { ProjectGallery } from "./ProjectGallery";
 import { ProjectHeroSlider } from "./ProjectHeroSlider";
 import { ProjectInformation } from "./ProjectInformation";
+import { ProjectBrochureLink, ProjectTechnicalDetails, ProjectVideos } from "./ProjectTechnicalDetails";
 import { SiteFooter } from "./SiteFooter";
 
 // Drawings grouped by building or block, in the order they first appear.
@@ -64,18 +65,23 @@ export function ProjectDetail({ project }: { project: Project }) {
                 )}
               </p>
             </div>
-            <LocationButton url={project.location?.googleMapsUrl} />
+            <div className="detail-actions">
+              <ProjectBrochureLink project={project} />
+              <LocationButton url={project.location?.googleMapsUrl} />
+            </div>
           </div>
         </section>
 
         <ProjectHeroSlider images={hero} title={title} />
         <ProjectInformation project={project} />
+        <ProjectTechnicalDetails project={project} />
         <ProjectGallery images={images.sitePlans ?? []} title={title} label={t.sitePlan} contain />
         <ProjectGallery images={[]} groups={drawingGroups(images.drawings, language)} title={title} label={t.architecturalDrawings} contain />
         <ProjectGallery images={images.floorPlans ?? []} title={title} label={t.floorPlans} contain />
         <ProjectGallery images={images.interior} title={title} />
         <ProjectGallery images={images.gallery ?? []} title={title} label={t.projectGallery} />
         <ProjectGallery images={images.progress ?? []} title={title} label={t.constructionProgress} />
+        <ProjectVideos videos={images.videos} title={title} />
 
         <section className="project-end">
           <Link href="/projects">{t.browseAllProjects}</Link>

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
-import { contactNavigation, isActivePath, primaryNavigation } from "@/lib/navigation";
+import { isActivePath, siteNavigation } from "@/lib/navigation";
 import { useLanguage } from "@/lib/usePreferences";
 import { CloseIcon } from "./Icons";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -70,8 +70,8 @@ export function MobileNavigation({ open, onClose }: { open: boolean; onClose: ()
         </div>
         <nav aria-label={t.primaryNavigation}>
           <ul className="mobile-nav-list">
-            {[{ href: "/", label: () => t.navHome }, ...primaryNavigation, contactNavigation].map((item) => {
-              const active = item.href === "/" ? pathname === "/" : isActivePath(pathname, item.href);
+            {siteNavigation.map((item) => {
+              const active = isActivePath(pathname, item.href);
               return (
                 <li key={item.href}>
                   <Link

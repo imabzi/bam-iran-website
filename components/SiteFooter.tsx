@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { company, contact } from "@/data/company";
 import { resolveText } from "@/lib/i18n";
-import { contactNavigation, primaryNavigation } from "@/lib/navigation";
+import { siteNavigation } from "@/lib/navigation";
 import { useLanguage } from "@/lib/usePreferences";
-import { BrandLogo } from "./BrandLogo";
+import { BrandMark } from "./BrandMark";
 import { InstagramIcon } from "./Icons";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Ltr, telHref } from "./Text";
@@ -20,7 +20,7 @@ export function SiteFooter() {
       <div className="footer-inner">
         <div className="footer-brand">
           <Link href="/" className="footer-logo" aria-label={t.brandLabel}>
-            <BrandLogo />
+            <BrandMark sizes="120px" />
           </Link>
           <p className="footer-name">{t.companyName}</p>
           {excerpt && (
@@ -33,7 +33,7 @@ export function SiteFooter() {
         <nav className="footer-column" aria-label={t.footerExplore}>
           <h2 className="footer-heading">{t.footerExplore}</h2>
           <ul>
-            {[...primaryNavigation, contactNavigation].map((item) => (
+            {siteNavigation.filter((item) => item.href !== "/").map((item) => (
               <li key={item.href}>
                 <Link href={item.href}>{item.label(t)}</Link>
               </li>

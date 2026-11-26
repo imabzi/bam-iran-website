@@ -24,6 +24,8 @@ export const projectContent: Record<string, ProjectContent> = {
       completionYear: { en: "2011–12", fa: "۱۳۹۰" },
       siteArea: 2918,
       architect: daliri,
+      // Supplied by BAM management (1405 website update).
+      siteConditions: { fa: "ساختمان بر زمینی با شیب تند در دامنه البرز ساخته شده و شرایط دشوار سایت، از چالش‌های اصلی اجرای آن بوده است." },
     },
   },
   R02: {
@@ -231,7 +233,9 @@ export const projectContent: Record<string, ProjectContent> = {
       en: "A commercial and leisure complex of low-rise buildings on the east side of Chitgar Lake in Tehran's District 22, designed by Morteza Adib and Maryam Yousefi.",
       fa: "مجموعه‌ای تجاری و تفریحی با بناهای کم‌ارتفاع در ضلع شرقی دریاچه چیتگر، منطقه ۲۲ تهران، با طراحی مرتضی ادیب و مریم یوسفی.",
     },
-    location: { ...inTehran, district: { en: "District 22", fa: "منطقه ۲۲" } },
+    // Decoded from the approved Plus Code P6VC+RG6 in projectLocations.ts; it
+    // matches the OSM position recorded in PROJECT_RESEARCH_REPORT.md.
+    location: { ...inTehran, district: { en: "District 22", fa: "منطقه ۲۲" }, coordinates: { lat: 35.74454, lng: 51.22127 } },
     facts: {
       siteArea: 60000,
       floors: 3,
@@ -251,6 +255,8 @@ export const projectContent: Record<string, ProjectContent> = {
       fa: "هتلی در ساحل دریای خزر در مازندران، میان نوشهر و نور، با بیش از ۵۰۰ واحد اقامتی، ساخته‌شده توسط گروه بام.",
     },
     location: { city: { en: "Nowshahr", fa: "نوشهر" }, country: iran },
+    // 29 floors: supplied by BAM management (1405 website update).
+    facts: { floors: 29 },
     // Placed by hand in public/projects/araz-hotel. The image import does not manage them.
     images: {
       cover: "/projects/araz-hotel/card.jpg",

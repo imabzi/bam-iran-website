@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage, useViewMode } from "@/lib/usePreferences";
-import { GridIcon, ListIcon } from "./ViewIcons";
+import { GridIcon, ListIcon, MapIcon } from "./ViewIcons";
 
 export function ViewSwitcher() {
   const { t } = useLanguage();
@@ -10,6 +10,7 @@ export function ViewSwitcher() {
   const options = [
     { id: "visual", label: t.viewVisual, Icon: GridIcon },
     { id: "index", label: t.viewIndex, Icon: ListIcon },
+    { id: "map", label: t.viewMap, Icon: MapIcon },
   ] as const;
 
   return (

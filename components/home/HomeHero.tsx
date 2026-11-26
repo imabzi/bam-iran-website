@@ -1,148 +1,134 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-import { useCallback, useEffect, useRef, useState, type CSSProperties, type TouchEvent } from "react";
-import { heroSlides } from "@/data/home";
-import { getProjectByCode } from "@/data/projects";
-import { directionOf, formatNumber, textOf } from "@/lib/i18n";
+import { useEffect, useRef, useState } from "react";
+import { heroVideo } from "@/data/home";
+import { resolveText } from "@/lib/i18n";
 import { useLanguage, usePrefersReducedMotion } from "@/lib/usePreferences";
-import { ArrowIcon } from "../ArrowIcon";
-import { ChevronIcon } from "../Icons";
-import { LocalizedText } from "../Text";
+import { BrandMark } from "../BrandMark";
 
-const SLIDE_DURATION = 7000;
-const SWIPE_DISTANCE = 40;
-
-const slides = heroSlides.flatMap((slide) => {
-  const project = getProjectByCode(slide.projectCode);
-  return project ? [{ ...slide, project }] : [];
-});
+/**
+ * The homepage hero: BAM's own construction film, full screen, with the
+ * official logo and a short statement.
+ *
+ * - The video is always muted, loops and plays inline. Playback starts from
+ *   script, so a visitor who prefers reduced motion sees only the poster (a
+ *   frame of the same film) and nothing moves until they press play.
+ * - The poster shows while the video loads, so the hero is never black.
+ * - A discreet button pauses and resumes it; the film also pauses while the
+ *   hero is scrolled out of view.
+ */
+// Read at the moment of playback: the preference hook is false until hydration.
+function prefersReducedMotion() {
+  return typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
 
 export function HomeHero() {
   const { language, t } = useLanguage();
   const reducedMotion = usePrefersReducedMotion();
-  const [active, setActive] = useState(0);
-  const [mounted, setMounted] = useState(false);
-  const [hovering, setHovering] = useState(false);
-  const [focused, setFocused] = useState(false);
-  const [touching, setTouching] = useState(false);
-  const touchStartX = useRef<number | null>(null);
-  const count = slides.length;
-  const autoplay = count > 1 && !reducedMotion && mounted;
-  const holding = hovering || focused || touching;
+  const video = useRef<HTMLVideoElement>(null);
+  const section = useRef<HTMLElement>(null);
+  const [playing, setPlaying] = useState(false);
+  // The visitor's own choice, once made, wins over the automatic behaviour.
+  const userChoice = useRef<"play" | "pause" | null>(null);
+  const visible = useRef(true);
 
-  // Later slides load only after the first image has had the network to itself.
-  useEffect(() => {
-    const timer = setTimeout(() => setMounted(true), 1200);
-    return () => clearTimeout(timer);
-  }, []);
+  const statement = resolveText(heroVideo.statement, language);
+  const support = resolveText(heroVideo.support, language);
 
   useEffect(() => {
-    if (!autoplay || holding) return;
-    const timer = setTimeout(() => setActive((current) => (current + 1) % count), SLIDE_DURATION);
-    return () => clearTimeout(timer);
-  }, [active, autoplay, holding, count]);
+    const element = video.current;
+    if (!element) return;
+    element.muted = true;
+    element.defaultMuted = true;
+    const wantsPlay = userChoice.current ? userChoice.current === "play" : !prefersReducedMotion();
+    if (wantsPlay && visible.current) element.play().catch(() => setPlaying(false));
+    else element.pause();
+  }, [reducedMotion]);
 
-  const go = useCallback((step: number) => setActive((current) => (current + step + count) % count), [count]);
+  useEffect(() => {
+    const element = section.current;
+    if (!element) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      visible.current = entry.isIntersecting;
+      const media = video.current;
+      if (!media) return;
+      const wantsPlay = userChoice.current ? userChoice.current === "play" : !prefersReducedMotion();
+      if (entry.isIntersecting && wantsPlay) media.play().catch(() => setPlaying(false));
+      else if (!entry.isIntersecting) media.pause();
+    }, { threshold: 0.05 });
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [reducedMotion]);
 
-  if (count === 0) return null;
-  const slide = slides[active];
-  const pad = (value: number) => formatNumber(value, language).padStart(2, formatNumber(0, language));
-
-  function onTouchStart(event: TouchEvent) {
-    touchStartX.current = event.touches[0].clientX;
-    setTouching(true);
-  }
-
-  function onTouchEnd(event: TouchEvent) {
-    setTouching(false);
-    if (touchStartX.current === null) return;
-    const distance = event.changedTouches[0].clientX - touchStartX.current;
-    touchStartX.current = null;
-    if (Math.abs(distance) < SWIPE_DISTANCE) return;
-    const forward = directionOf(language) === "rtl" ? distance > 0 : distance < 0;
-    go(forward ? 1 : -1);
+  function toggle() {
+    const element = video.current;
+    if (!element) return;
+    if (element.paused) {
+      userChoice.current = "play";
+      element.muted = true;
+      element.play().catch(() => setPlaying(false));
+    } else {
+      userChoice.current = "pause";
+      element.pause();
+    }
   }
 
   return (
-    <section
-      className="home-hero"
-      aria-roledescription="carousel"
-      aria-label={t.heroLabel}
-      onPointerEnter={(event) => { if (event.pointerType === "mouse") setHovering(true); }}
-      onPointerLeave={() => setHovering(false)}
-      onFocus={(event) => { if (event.target.matches(":focus-visible")) setFocused(true); }}
-      onBlur={() => setFocused(false)}
-      onTouchStart={count > 1 ? onTouchStart : undefined}
-      onTouchEnd={count > 1 ? onTouchEnd : undefined}
-      onTouchCancel={() => setTouching(false)}
-    >
+    <section ref={section} className="home-hero hero-cinema" aria-label={t.heroLabel}>
       <div className="hero-media">
-        {slides.map((item, index) => (
-          <div
-            key={item.projectCode}
-            className={index === active ? "hero-frame active" : "hero-frame"}
-            style={{ "--pos": item.position, "--pos-mobile": item.mobilePosition } as CSSProperties}
-            aria-hidden={index !== active}
-          >
-            {(index === 0 || mounted) && (
-              <Image
-                src={item.src}
-                alt={textOf(item.project.title, language) ?? item.project.title.fa}
-                fill
-                sizes="100vw"
-                priority={index === 0}
-                quality={80}
-                className="hero-image"
-              />
-            )}
-          </div>
-        ))}
-        <div className="hero-shade" aria-hidden="true" />
+        <video
+          ref={video}
+          className="hero-video"
+          poster={heroVideo.poster}
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-hidden="true"
+          tabIndex={-1}
+          disablePictureInPicture
+          onPlay={() => setPlaying(true)}
+          onPause={() => setPlaying(false)}
+        >
+          <source src={heroVideo.src} type="video/mp4" />
+        </video>
+      </div>
+      <div className="hero-shade" aria-hidden="true" />
+
+      <div className="hero-center">
+        <div className="hero-plaque">
+          <BrandMark className="hero-logo" alt={t.companyName} priority sizes="(max-width: 767px) 34vw, (max-width: 1920px) 220px, 300px" />
+        </div>
+        {statement && (
+          <p className="hero-statement" lang={statement.lang !== language ? statement.lang : undefined}>
+            {statement.text}
+          </p>
+        )}
+        {support && (
+          <p className="hero-support" lang={support.lang !== language ? support.lang : undefined}>
+            {support.text}
+          </p>
+        )}
       </div>
 
-      <div className="hero-content">
-        <div className="hero-caption" key={slide.projectCode} aria-live={autoplay && !holding ? "off" : "polite"}>
-          <LocalizedText as="p" className="hero-category" value={slide.project.category} language={language} />
-          <LocalizedText as="h2" className="hero-title" value={slide.project.title} language={language} />
-          <Link href={`/projects/${slide.project.slug}`} className="hero-link">
-            <span>{t.heroViewProject}</span>
-            <ArrowIcon />
-          </Link>
-        </div>
-
-        {count > 1 && (
-          <div className="hero-controls">
-            <p className="hero-counter" aria-label={t.heroPosition(formatNumber(active + 1, language), formatNumber(count, language))}>
-              <span>{pad(active + 1)}</span>
-              <span className="hero-counter-line" aria-hidden="true" />
-              <span>{pad(count)}</span>
-            </p>
-            <div className="hero-progress" aria-hidden="true">
-              {slides.map((item, index) => (
-                <span
-                  key={item.projectCode}
-                  className={[
-                    "hero-progress-bar",
-                    index === active ? "active" : "",
-                    index < active ? "done" : "",
-                    autoplay && !holding ? "running" : "",
-                  ].join(" ")}
-                  style={{ "--slide-duration": `${SLIDE_DURATION}ms` } as CSSProperties}
-                />
-              ))}
-            </div>
-            <div className="hero-arrows">
-              <button type="button" className="hero-arrow hero-arrow-previous" aria-label={t.heroPrevious} onClick={() => go(-1)}>
-                <ChevronIcon />
-              </button>
-              <button type="button" className="hero-arrow" aria-label={t.heroNext} onClick={() => go(1)}>
-                <ChevronIcon />
-              </button>
-            </div>
-          </div>
-        )}
+      <div className="hero-foot">
+        <a href="#bam-in-numbers" className="hero-scroll">
+          <span className="hero-scroll-line" aria-hidden="true" />
+          <span>{t.heroScroll}</span>
+        </a>
+        <button
+          type="button"
+          className="hero-playback-toggle"
+          aria-label={playing ? t.heroPauseVideo : t.heroPlayVideo}
+          aria-pressed={!playing}
+          onClick={toggle}
+        >
+          <svg viewBox="0 0 12 12" aria-hidden="true">
+            {playing
+              ? <path d="M4 2.5v7M8 2.5v7" fill="none" stroke="currentColor" strokeWidth="1.2" />
+              : <path d="M3.5 2v8l6-4z" fill="currentColor" />}
+          </svg>
+        </button>
       </div>
     </section>
   );

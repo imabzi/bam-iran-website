@@ -10,11 +10,13 @@
     "import:images": "node scripts/import-project-images.mjs"
   },
   "dependencies": {
+    "leaflet": "^1.9.4",
     "next": "15.5.28",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.12",
     "@types/node": "22.13.10",
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",

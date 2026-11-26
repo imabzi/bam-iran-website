@@ -1,4 +1,4 @@
-import type { Language } from "@/lib/i18n";
+import type { Language, TextValue } from "@/lib/i18n";
 import { getProjectByCode, hasPhotography, isListedIn, projects, type Project, type ProjectStatus } from "./projects";
 
 // Homepage curation. Every image is an existing BAM photograph from the project
@@ -14,6 +14,18 @@ export type HeroSlide = {
   mobilePosition: string;
 };
 
+// The homepage hero film: BAM's own construction footage, used exactly as
+// supplied (public/home/Hero-Video.mp4, 1280×720). The poster is a frame of the
+// same film at 9 seconds, shown while it loads and for reduced motion.
+// The copy is suggested editorial wording, not an official slogan.
+export const heroVideo = {
+  src: "/home/Hero-Video.mp4",
+  poster: "/home/hero-poster.jpg",
+  statement: { fa: "بام؛ تجربه‌ای ماندگار در ساخت و توسعه" } satisfies TextValue,
+  support: { fa: "از طراحی تا اجرا، با تکیه بر تجربه، دانش مهندسی و تعهد به کیفیت." } satisfies TextValue,
+};
+
+// The previous photographic hero, kept for reference. Not shown.
 // Up to three projects. Chosen for resolution (2800px), a clear view of the
 // building and calm areas for the title near the bottom of the frame.
 export const heroSlides: HeroSlide[] = [

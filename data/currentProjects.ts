@@ -37,6 +37,7 @@ export const currentProjects: ProjectRecord[] = [
     slug: "hotel-makitakish",
     title: { fa: "هتل ماکیتاکیش" },
     status: "ongoing",
+    categoryId: "hospitality", // A hotel, by its supplied name.
     publication: "published",
     images: { exterior: [], interior: [] },
     facts: {

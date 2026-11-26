@@ -15,6 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/events",
     "/journal",
     "/about",
+    "/team",
+    "/awards",
     "/contact",
     ...projects.map((project) => `/projects/${project.slug}`),
     ...architects.map((architect) => `/architects/${architect.id}`),

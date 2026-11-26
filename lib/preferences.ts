@@ -1,6 +1,6 @@
 import { defaultLanguage, languages, type Language } from "./i18n";
 
-export const viewModes = ["visual", "index"] as const;
+export const viewModes = ["visual", "index", "map"] as const;
 export type ViewMode = (typeof viewModes)[number];
 
 export const themes = ["light", "dark"] as const;
@@ -81,6 +81,6 @@ var d=document.documentElement,p=null,l=localStorage.getItem(${JSON.stringify(LA
 if(t!=="light"&&t!=="dark"){t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}
 d.setAttribute(${JSON.stringify(THEME_ATTRIBUTE)},t);d.style.colorScheme=t;
 if(l==="fa"||l==="ar"){d.lang=l;d.dir="rtl";p="language"}
-else if(localStorage.getItem(${JSON.stringify(VIEW_KEY)})==="index"){p="view"}
+else{var v=localStorage.getItem(${JSON.stringify(VIEW_KEY)});if(v==="index"||v==="map"){p="view"}}
 if(p){d.setAttribute(${JSON.stringify(PENDING_ATTRIBUTE)},p);setTimeout(function(){d.removeAttribute(${JSON.stringify(PENDING_ATTRIBUTE)})},3000)}
 }catch(e){}})();`;
